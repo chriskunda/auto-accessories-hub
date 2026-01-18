@@ -7,3 +7,7 @@ nav{
     border-bottom: 1px solid black;
     top: 0;
 }
+
+.nav-bar{
+    display: flex;
+}
