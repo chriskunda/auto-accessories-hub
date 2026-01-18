@@ -1,11 +1,11 @@
 import './Header.css'
 
-const nav = () => {
+const Nav = () => {
     return(
         <nav>
             <div className='nav-bar'>
                 <div className='burger-icon'>
-                    <i class="fa-solid fa-bars"></i>
+                    <i className="fa-solid fa-bars burger-icon"></i>
                 </div>
                 <div className='links'>
                     <a href="">Products</a>
@@ -22,4 +22,4 @@ const nav = () => {
     )
 }
 
-export default nav;
+export default Nav;

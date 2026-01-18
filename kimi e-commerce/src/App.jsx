@@ -1,10 +1,10 @@
-import nav from './components/Header'
+import Nav from './components/Header'
 import './App.css'
 
 function App() {
 
   return (
-    <nav/>
+    <Nav/>
   )
 }
 
