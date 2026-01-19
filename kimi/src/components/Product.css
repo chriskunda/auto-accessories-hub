@@ -1,0 +1,62 @@
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.first-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 100px;
+
+}
+
+.cars-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cars-icons>i{
+    font-size: 130px;
+}
+
+.first-description>h1{
+    font-size: 70px;
+}
+
+.second-description>p{
+    font-size: 35px;
+}
+
+.buy-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.buy-button{
+    padding: 15px;
+    border-radius: 20px;
+    width: 25%;
+}
+
+.tyre-image{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.tyre-image>img{
+    width: 400px;
+}
