@@ -1,5 +1,6 @@
 import Nav from './components/Header'
 import Products from './components/Product'
+import Offer from './components/Offer'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className='parent-container'>
       <Nav/>
       <Products/>
+      <Offer/>
     </div>
   )
 }
