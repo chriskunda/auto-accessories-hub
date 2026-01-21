@@ -1,6 +1,7 @@
 import Nav from './components/Header'
 import Products from './components/Product'
 import Offer from './components/Offer'
+import Feature from './components/Features'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Nav/>
       <Products/>
       <Offer/>
+      <Feature/>
     </div>
   )
 }
