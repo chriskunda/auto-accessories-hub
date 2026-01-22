@@ -6,7 +6,7 @@ const Feature = () => {
 
                 <div className="feature-words">
                     <p className='feature-words-p1'>TAKING CARE OF EVERY CLIENT</p>
-                    <h1>Key Features</h1>
+                    <h1>Why choose us</h1>
                     <h2 className='feature-words-p2'>We are all about our client's comfort and safety. That's <br />
                         why we provide the best service you can imagine.
                     </h2>
