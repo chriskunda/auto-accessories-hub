@@ -16,7 +16,7 @@ const Feature = () => {
 
                     <div className="card">
                         <div className="card-icons">
-                            <p><i class="fa-regular fa-7"></i></p>
+                            <p className='card-icon-p1'><i class="fa-regular fa-7"></i></p>
                         </div>
                         <div className="descri">
                             <h2>7/7 days technical support</h2>
