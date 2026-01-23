@@ -1,0 +1,97 @@
+
+
+.parent-faq{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+}
+
+.faq-leftside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    background-color: yellow;
+}
+
+.faq-leftside>h1,p{
+    padding-bottom: 15px;
+}
+
+.faq-leftside-button{
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.faq-rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    height: 430px;
+    padding: 10px;
+    background-color: green;
+}
+
+.faq-rightside-div1{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 12px;
+    transition: max-height 0.4s ease;
+}
+
+.faq-rightside-div1:hover{
+    max-height: 90px;
+    cursor: pointer;
+}
+.faq-rightside-div1-p1{
+    padding-bottom: 10px;
+}
+
+.faq-rightside-div2{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 12px;
+    transition: max-height 0.4s ease;
+}
+
+.faq-rightside-div2:hover{
+    max-height: 90px;
+    cursor: pointer;
+}
+
+.faq-rightside-div2-p1{
+    padding-bottom: 10px;
+}
+
+.faq-rightside-div3{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 12px;
+    transition: max-height 0.4s ease;
+}
+
+.faq-rightside-div3:hover{
+    max-height: 90px;
+    cursor: pointer;
+}
+
+.faq-rightside-div3-p1{
+    padding-bottom: 10px;
+}

@@ -2,6 +2,7 @@ import Nav from './components/Header'
 import Products from './components/Product'
 import Offer from './components/Offer'
 import Feature from './components/Features'
+import Faq from './components/Faq'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Products/>
       <Offer/>
       <Feature/>
+      <Faq/>
     </div>
   )
 }
