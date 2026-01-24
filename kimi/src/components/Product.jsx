@@ -5,8 +5,7 @@ import Tyre from "../assets/tyre.png"
 const Products = () => {
     return(
         <div className="product-container">
-            <div className="first-page">
-                <div className="tyre-discription">
+                <div className="tyre-description">
                     <div className="first-description">
                         <h1>Premium Tyres <br />
                         from around the <br />
@@ -25,17 +24,7 @@ const Products = () => {
                 <div className="tyre-image">
                     <img src={Tyre} alt="" />
                 </div>
-            </div>
 
-            <div className="cars-icons">
-                {/* <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-gear"></i>
-                <i class="fa-solid fa-gear"></i> */}
-            </div>
         </div>
     )
 }

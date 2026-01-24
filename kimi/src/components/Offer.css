@@ -5,9 +5,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 900px;
-    width: 87%;
-    padding-top: 100px;
+    height: 920px;
+    width: 100%;
+    background-color: #f4f5f6;
 }
 
 .offer-words{
@@ -19,7 +19,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 50px;
+    font-size: 75px;
+}
+
+.offer-words>p{
+    text-align: center;
 }
 
 .offer-cards{

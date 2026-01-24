@@ -11,6 +11,7 @@ const Offer = () => {
     return(
         <div className="parent-offer">
             <div className="offer-words">
+                <p>OUR SERVICES</p>
                 <h1 className='offer-words-h1'>What we Offer</h1>
                 <p>Here is a varity of products and services we provide to our clients</p>
             </div>
