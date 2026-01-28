@@ -3,6 +3,7 @@ import Products from './components/Product'
 import Offer from './components/Offer'
 import Feature from './components/Features'
 import Faq from './components/Faq'
+import Contact from './components/Contact'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Offer/>
       <Feature/>
       <Faq/>
+      <Contact/>
     </div>
   )
 }

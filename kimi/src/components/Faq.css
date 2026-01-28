@@ -2,9 +2,11 @@
 
 .parent-faq{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding: 20px;
     height: auto;
     background-color: #f4f5f6;
 }
@@ -13,17 +15,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    align-items: center;
+    width: 80%;
     height: auto;
 }
 
 .faq-leftside>h1{
-    font-size: 70px;
+    font-size: 58px;
+    padding-top: 20px;
 }
 
 .faq-leftside>p{
     padding-top: 15px;
-    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    /* font-size: 30px; */
 }
 
 .faq-leftside-button{
@@ -38,16 +44,16 @@
     justify-content: center;
     gap: 20px;
     width: 45%;
-    height: 430px;
-    padding: 10px;
+    height: auto;
+    padding-top: 50px;
 }
 
 .faq-rightside-div1{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid black;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 10px;
     overflow: hidden;
     max-height: 12px;
     transition: max-height 0.4s ease;
@@ -65,8 +71,9 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid black;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-radius: 10px;
     overflow: hidden;
     max-height: 12px;
     transition: max-height 0.4s ease;
@@ -85,8 +92,9 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid black;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-radius: 10px;
     overflow: hidden;
     max-height: 12px;
     transition: max-height 0.4s ease;

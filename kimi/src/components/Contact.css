@@ -1,0 +1,37 @@
+
+.parent-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.parent-contact>h1{
+    font-size: 40px;
+}
+
+.p2{
+    margin-top: 5px;
+}
+
+.call-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.call-links>button{
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.call{
+    margin-top: 15px;
+}
+
+.call>a{
+    color: black;
+    text-decoration: none;
+}
