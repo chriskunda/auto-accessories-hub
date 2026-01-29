@@ -18,6 +18,7 @@ function App() {
       <Contact/>
     </div>
   )
+  
 }
 
 export default App;

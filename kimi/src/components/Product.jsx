@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Product.css"
 import Tyre from "../assets/tyre.png"
 
@@ -12,9 +12,9 @@ const Products = () => {
                         world here in Rwanda</h1>
                     </div>
                     <div className="second-description">
-                        <p>Don't deny yourself a pleasure of <br /> 
-                        driving your Car with best premium <br />
-                        tyres from around the world.</p>
+                        <p>Don't deny yourself a pleasure of 
+                        driving your Car with <br /> 
+                        best premium tyres from around the world.</p>
                     </div>
                     <div className="buy-button-container">
                         <button className="buy-button">Shop now</button>
