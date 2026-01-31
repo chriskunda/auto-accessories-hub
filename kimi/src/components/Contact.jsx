@@ -5,7 +5,10 @@ const Contact = () => {
         <div className="parent-contact">
 
             <h1>You've seen Enough. Now let's get to work.</h1>
-            <p className='p2'>Contact us by clicking on that WhatsApp button or the Phone number below.</p>
+            <p className='p2'>Get in touch with us by clicking on the WhatsApp button or the Phone number below.<br />
+                                We would like to hear from you with anything you need from our services.
+                                
+            </p>
 
             <div className='call-links'>
             <button><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
