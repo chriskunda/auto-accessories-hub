@@ -4,6 +4,7 @@ import Offer from './components/Offer'
 import Feature from './components/Features'
 import Faq from './components/Faq'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Feature/>
       <Faq/>
       <Contact/>
+      <Footer/>
     </div>
   )
   
