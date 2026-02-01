@@ -1,3 +1,11 @@
+.big-feature-parent{
+    width: 100%;
+    height: auto;
+    background-color: #f4f5f6;
+    display: flex;
+    justify-content: center;
+}
+
 .feature-parent{
     display: flex;
     flex-direction: column;
