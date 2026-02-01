@@ -1,3 +1,5 @@
+import Pic from "../assets/react.svg"
+
 import './Footer.css'
 
 const Footer = () => {
@@ -8,9 +10,6 @@ const Footer = () => {
                 <div className='footer-links'>
 
                     <div className='link'>
-                        <p>agafoto/icon</p>
-                    </div>
-                    <div className='link'>
                         <h2>Reach us</h2>
                         <i class="fa-solid fa-phone"><a href="tel:+250798697759">+250 783 169 582</a></i>
                         <i class="fa-solid fa-at"><a href="mailto:christianira2003@gmail.com">ouremail@gmail.com</a></i>
@@ -18,25 +17,37 @@ const Footer = () => {
                         <i class="fa-regular fa-clock"><span className='open'>Open from 8am to 8pm</span></i>
                     </div>
                     <div className='link'>
-                        <p>astyuiopjhf</p>
-                        <p>WERTYUIOERTY</p>
-                        <p>wertyuiortyt</p>
+                        <h2>Our services</h2>
+                        <i class="fa-solid fa-screwdriver-wrench"><a href="">Used tyres</a></i>
+                        <i class="fa-solid fa-screwdriver-wrench"><a href="">New tyres</a></i>
+                        <i class="fa-solid fa-screwdriver-wrench"><a href="">Wheel allignment</a></i>
+                        <i class="fa-solid fa-screwdriver-wrench"><a href="">Oil change</a></i>
                     </div>
                     <div className='link'>
-                        <p>astyuiopjhf</p>
-                        <p>WERTYUIOERTY</p>
-                        <p>wertyuiortyt</p>
+                        <h2>Legal</h2>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
                     </div>
                     <div className='link'>
-                        <p>astyuiopjhf</p>
-                        <p>WERTYUIOERTY</p>
-                        <p>wertyuiortyt</p>
+                        <div>
+                            <h2>Social Media</h2>
+                        </div>
+                        <div className="sc2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        </div>
                     </div>
 
                 </div>
 
                 <div className='line'>
                     <hr />
+                    
+                </div>
+
+                <div className="hero">
+                    <h1 className="hero-bg-text">Auto Accessories Hub</h1>
                 </div>
 
                 <div className='footer'>
