@@ -4,6 +4,7 @@ import Tyre from "../assets/tyre.png"
 
 const Products = () => {
     return(
+        
         <div className="product-container">
                 <div className="tyre-description">
                     <div className="first-description">
