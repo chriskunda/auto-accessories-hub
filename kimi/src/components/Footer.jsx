@@ -13,7 +13,7 @@ const Footer = () => {
                         <h2>Reach us</h2>
                         <i class="fa-solid fa-phone"><a className="open" href="tel:+250798697759">+250 783 169 582</a></i>
                         <i class="fa-solid fa-at"><a className="open" href="mailto:christianira2003@gmail.com">ouremail@gmail.com</a></i>
-                        <i class="fa-solid fa-location-dot"><a className="open" href="https://www.google.com/maps/place/1°56'52.9">KG 40 st, Kigali, Kimironko</a></i>
+                        <i class="fa-solid fa-location-dot"><a className="open" href="https://maps.app.goo.gl/BhCafkMqg6joo8wL8">KG 40 st, Kigali, Kimironko</a></i>
                         <i class="fa-regular fa-clock"><span className="open">Open from 8am to 8pm</span></i>
                     </div>
                     <div className='link'>
