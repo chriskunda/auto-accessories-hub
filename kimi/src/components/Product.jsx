@@ -8,23 +8,20 @@ const Products = () => {
         <div className="product-container">
                 <div className="tyre-description">
                     <div className="first-description">
-                        <h1>Premium Tyres <br />
-                        from around the <br />
-                        world here in Rwanda</h1>
+                        <h1>Premium Tyres from around the world and top-tier Services here in Rwanda.</h1>
                     </div>
                     <div className="second-description">
                         <p>Don't deny yourself a pleasure of 
-                        driving your Car with <br /> 
-                        best premium tyres from around the world.</p>
+                        driving a well-maintained car with premium tyres from around the world.</p>
                     </div>
                     <div className="buy-button-container">
-                        <button className="buy-button">Shop now</button>
+                        <a className="buy-button">Shop now</a>
                     </div>
                 </div>
 
-                <div className="tyre-image">
+                {/* <div className="tyre-image">
                     <img src={Tyre} alt="" />
-                </div>
+                </div> */}
 
         </div>
     )

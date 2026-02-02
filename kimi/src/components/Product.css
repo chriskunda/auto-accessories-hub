@@ -13,7 +13,12 @@
 }
 
 .tyre-description{
-    width: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .first-description>h1{
@@ -21,17 +26,22 @@
     font-family: "Bricolage Grotesque", sans-serif;
 }
 
+.second-description{
+    width: 60%;
+}
 .second-description>p{
     font-size: 26px;
     font-family: "Jost", sans-serif;
+    padding-top: 20px;
 }
 
 .buy-button-container{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     padding-top: 20px;
+    width: 50%;
 }
 
 .buy-button{
@@ -42,6 +52,7 @@
     width: 25%;
     font-family: "Jost", sans-serif;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .buy-button:hover{
