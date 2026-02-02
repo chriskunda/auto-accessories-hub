@@ -9,7 +9,7 @@ import Accessories from '../assets/accessories.jpg'
 
 const Offer = () => {
     return(
-        <div className="parent-offer">
+        <div className="parent-offer" id='services'>
             <div className="offer-words">
                 <p>OUR SERVICES</p>
                 <h1 className='offer-words-h1'>What we Offer</h1>

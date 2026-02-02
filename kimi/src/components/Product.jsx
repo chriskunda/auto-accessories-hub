@@ -15,7 +15,7 @@ const Products = () => {
                         driving a well-maintained car with premium tyres from around the world.</p>
                     </div>
                     <div className="buy-button-container">
-                        <a className="buy-button">Shop now</a>
+                        <a className="buy-button" href="#services">Shop now</a>
                     </div>
                 </div>
 
