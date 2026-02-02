@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .parent-contact{
     display: flex;
@@ -11,11 +13,13 @@
 
 .parent-contact>h1{
     font-size: 40px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .p2{
     margin-top: 5px;
     text-align: center;
+    font-family: "Jost", sans-serif;
 }
 
 .call-links{
@@ -23,14 +27,30 @@
     flex-direction: column;
 }
 
-.call-links>button{
-    margin-top: 25px;
+.call-links>a{
+    margin-top: 35px;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid grey;
+    background-color: rgba(215, 215, 215, 0.747);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.call-links>a:hover{
+    background-color: rgba(198, 249, 198, 0.774);
+    border: 1px solid green;
+    cursor: pointer;
+    color: green;
+}
+
+.call-links>i>a{
+    font-weight: 700;
 }
 
 .call{
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .call>a{

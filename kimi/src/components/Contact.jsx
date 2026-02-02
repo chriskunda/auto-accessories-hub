@@ -11,7 +11,7 @@ const Contact = () => {
             </p>
 
             <div className='call-links'>
-            <button><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
+            <a href="https://wa.me/250781234567"><i className="fa-brands fa-whatsapp"></i> Whatsapp</a>
             <i className="fa-solid fa-phone call"> <a href="tel:+250798697759">+250 783 169 582</a> </i>
             </div>
 

@@ -17,7 +17,8 @@ const Feature = () => {
 
                         <div className="card">
                             <div className="card-icons">
-                                <p className='card-icon-p1'><i class="fa-regular fa-7"></i></p>
+                                <p className='card-icon-p1'>
+                                <i className="fa-regular fa-7"></i></p>
                             </div>
                             <div className="descri">
                                 <h2>7/7 days technical support</h2>
@@ -26,7 +27,7 @@ const Feature = () => {
 
                         <div className="card">
                             <div className="card-icons">
-                                <p><i class="fa-solid fa-award"></i></p>
+                                <p><i className="fa-solid fa-award"></i></p>
                             </div>
                             <div className="descri">
                                 <h2>We provide you a <br />1-month guarantee</h2>
@@ -35,7 +36,7 @@ const Feature = () => {
 
                         <div className="card">
                             <div className="card-icons">
-                                <p><i class="fa-solid fa-bolt"></i></p>
+                                <p><i className="fa-solid fa-bolt"></i></p>
                             </div>
                             <div className="descri">
                                 <h2>Complete premium car services for all models</h2>
@@ -44,7 +45,7 @@ const Feature = () => {
 
                         <div className="card">
                             <div className="card-icons">
-                                <p><i class="fa-regular fa-circle-check"></i></p>
+                                <p><i className="fa-regular fa-circle-check"></i></p>
                             </div>
                             <div className="descri">
                                 <h2>Absolute confidentiality and professionalism</h2>

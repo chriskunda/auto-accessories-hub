@@ -11,17 +11,17 @@ const Footer = () => {
 
                     <div className='link'>
                         <h2>Reach us</h2>
-                        <i class="fa-solid fa-phone"><a className="open" href="tel:+250798697759">+250 783 169 582</a></i>
-                        <i class="fa-solid fa-at"><a className="open" href="mailto:christianira2003@gmail.com">ouremail@gmail.com</a></i>
-                        <i class="fa-solid fa-location-dot"><a className="open" href="https://maps.app.goo.gl/BhCafkMqg6joo8wL8">KG 40 st, Kigali, Kimironko</a></i>
-                        <i class="fa-regular fa-clock"><span className="open">Open from 8am to 8pm</span></i>
+                        <i className="fa-solid fa-phone"><a className="open" href="tel:+250798697759">+250 783 169 582</a></i>
+                        <i className="fa-solid fa-at"><a className="open" href="mailto:christianira2003@gmail.com">ouremail@gmail.com</a></i>
+                        <i className="fa-solid fa-location-dot"><a className="open" href="https://maps.app.goo.gl/BhCafkMqg6joo8wL8">KG 40 st, Kigali, Kimironko</a></i>
+                        <i className="fa-regular fa-clock"><span className="open">Open from 8am to 8pm</span></i>
                     </div>
                     <div className='link'>
                         <h2>Our services</h2>
-                        <i class="fa-solid fa-screwdriver-wrench"><a className="open" href="">Used tyres</a></i>
-                        <i class="fa-solid fa-screwdriver-wrench"><a className="open" href="">New tyres</a></i>
-                        <i class="fa-solid fa-screwdriver-wrench"><a className="open" href="">Wheel allignment</a></i>
-                        <i class="fa-solid fa-screwdriver-wrench"><a className="open" href="">Oil change</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Used tyres</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">New tyres</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Wheel allignment</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Oil change</a></i>
                     </div>
                     <div className='link'>
                         <h2>Legal</h2>
@@ -33,9 +33,9 @@ const Footer = () => {
                             <h2>Social Media</h2>
                         </div>
                         <div className="sc2">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-youtube"></i>
+                        <i className="fa-brands fa-instagram"></i>
+                        <i className="fa-brands fa-x-twitter"></i>
+                        <i className="fa-brands fa-youtube"></i>
                         </div>
                     </div>
 
