@@ -8,11 +8,10 @@ const Nav = () => {
                     <i className="fa-solid fa-bars burger-icon"></i>
                 </div>
                 <div className='links'>
-                    <a href="">Products</a>
-                    <a href="">Sales</a>
-                    <a href="">Inventory</a>
-                    <a href="">Reports</a>
-                    <a href="">Dashboard</a>
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Contact</a>
                 </div>
                 <div className='icon'>
                     <h1>Automobile.</h1>
