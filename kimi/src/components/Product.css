@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .product-container{
     display: flex;
@@ -15,10 +18,12 @@
 
 .first-description>h1{
     font-size: 70px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .second-description>p{
-    font-size: 30px;
+    font-size: 26px;
+    font-family: "Jost", sans-serif;
 }
 
 .buy-button-container{
@@ -32,16 +37,24 @@
 .buy-button{
     padding: 15px;
     border-radius: 20px;
+    border: 1px solid grey;
+    background-color: rgba(166, 168, 171, 0.393);
     width: 25%;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+}
+
+.buy-button:hover{
+    background-color: rgba(139, 144, 148, 0.393);   
 }
 
 .tyre-image{
     height: auto;
     width: auto;
     overflow: hidden;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 
 .tyre-image>img{
