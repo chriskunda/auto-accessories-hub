@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .parent-faq{
     display: flex;
@@ -23,19 +24,14 @@
 .faq-leftside>h1{
     font-size: 58px;
     padding-top: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .faq-leftside>p{
     padding-top: 15px;
     width: 50%;
     text-align: center;
-    /* font-size: 30px; */
-}
-
-.faq-leftside-button{
-    width: 150px;
-    padding: 10px;
-    border-radius: 10px;
+    font-family: "Jost", sans-serif;
 }
 
 .faq-rightside{
@@ -65,6 +61,7 @@
 }
 .faq-rightside-div1-p1{
     padding-bottom: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .faq-rightside-div2{
@@ -73,20 +70,21 @@
     padding: 15px;
     background-color: #f4f5f6;
     border-radius: 10px;
-    border-radius: 10px;
     overflow: hidden;
     max-height: 12px;
     transition: max-height 0.4s ease;
 }
 
 .faq-rightside-div2:hover{
-    max-height: 240px;
+    max-height: 260px;
     cursor: pointer;
 }
 
-.faq-rightside-div2-p1{
+.faq-rightside-div1-p1>{
     padding-bottom: 20px;
 }
+
+
 
 .faq-rightside-div3{
     display: flex;
@@ -107,4 +105,5 @@
 
 .faq-rightside-div3-p1{
     padding-bottom: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
