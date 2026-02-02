@@ -3,6 +3,10 @@
     font-family: sans-serif;    
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .parent-container{
     display: flex;
     height: auto;

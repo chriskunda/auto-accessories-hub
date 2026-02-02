@@ -25,7 +25,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>Used tyres</h1>
                             <p>Inspected used tyres for safe driving</p>
-                            <button className='card-description-button'>View items</button>
+                            <a className='btn' href="#call">Contact us for further help</a>
                         </div>
 
                     </div>
