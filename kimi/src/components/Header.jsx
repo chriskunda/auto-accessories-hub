@@ -10,8 +10,8 @@ const Nav = () => {
                 <div className='links'>
                     <a href="">Home</a>
                     <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Contact</a>
+                    <a href="#services">Services</a>
+                    <a href="#call">Contact</a>
                 </div>
                 <div className='icon'>
                     <h1>Automobile.</h1>

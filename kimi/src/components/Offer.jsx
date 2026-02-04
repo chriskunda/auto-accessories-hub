@@ -9,11 +9,12 @@ import Accessories from '../assets/accessories.jpg'
 
 const Offer = () => {
     return(
+
         <div className="parent-offer" id='services'>
             <div className="offer-words">
                 <p>OUR SERVICES</p>
                 <h1 className='offer-words-h1'>What we Offer</h1>
-                <p>Here is a varity of products and services we provide to our clients</p>
+                <p>Here is products and services we provide to our clients.</p>
             </div>
             <div className="offer-cards">
 
@@ -61,7 +62,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>Wheel allignment</h1>
                             <p>Wheel alignment for better handling and tyre life</p>
-                            <button className='card-description-button'>View items</button>
+                            <button className='card-description-button'>Book an appointment</button>
                         </div>
                     </div>
 
@@ -90,6 +91,7 @@ const Offer = () => {
 
             </div>
         </div>
+
     )
 }
 

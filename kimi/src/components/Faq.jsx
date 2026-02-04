@@ -8,7 +8,7 @@ const Faq = () =>{
                 <h1>Frequently asked questions</h1>
                 <p>Frequently asked questions about us. You can
                     find the answers to these common questions in
-                    the list of answers on the right side by hovering on the question.
+                    the list of answers below by hovering on the question.
                 </p>
             </div>
 
