@@ -1,6 +1,9 @@
-
+import Lottie from "lottie-react";
+import scrollDownAnimation from "../assets/scrolldown.json";
 import "./Product.css"
 import Tyre from "../assets/tyre.png"
+
+
 
 const Products = () => {
     return(
@@ -16,6 +19,16 @@ const Products = () => {
                     </div>
                     <div className="buy-button-container">
                         <a className="buy-button" href="#services">Shop now</a>
+
+                        {/* <Lottie className="scroll"
+                            animationData= {scrollDownAnimation}
+                            loop={true}
+                            style={{ width: 60, height: 60 }}
+
+                        /> */}
+
+                        
+
                     </div>
                 </div>
 
