@@ -7,18 +7,27 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css'
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
 
   return (
-    <div className='parent-container'>
-      <Nav/>
-      <Products/>
-      <Offer/>
-      <Feature/>
-      <Faq/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={
+          <div className='parent-container'>
+            <Nav/>
+            <Products/>
+            <Offer/>
+            <Feature/>
+            <Faq/>
+            <Contact/>
+            <Footer/>
+          </div>
+        }></Route>
+        {/* <Route path='/about' element={<About />}></Route> */}
+      </Routes>
+    </Router>
   )
   
 }

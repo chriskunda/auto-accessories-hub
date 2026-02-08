@@ -6,8 +6,24 @@ import Oil from '../assets/oilchange.jpg'
 import Rims from '../assets/newrims.webp'
 import Accessories from '../assets/accessories.jpg'
 
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+
 
 const Offer = () => {
+
+    const navigate = useNavigate();
+
+
+    const [number, setNumber] = useState(0);
+
+    console.log(number)
+
+    if (number <= 10) {
+        setNumber(number+1)
+    }
+
+
     return(
 
         <div className="parent-offer" id='services'>
@@ -39,7 +55,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>New tyres</h1>
                             <p>Quality new tyres you can trust.</p>
-                            <button className='card-description-button'>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/items')}>View items</button>
                         </div>
                     </div>
 
