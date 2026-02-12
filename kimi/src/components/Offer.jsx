@@ -7,21 +7,12 @@ import Rims from '../assets/newrims.webp'
 import Accessories from '../assets/accessories.jpg'
 
 import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
-
 
 const Offer = () => {
 
     const navigate = useNavigate();
 
-
-    const [number, setNumber] = useState(0);
-
-    console.log(number)
-
-    if (number <= 10) {
-        setNumber(number+1)
-    }
+  
 
 
     return(
