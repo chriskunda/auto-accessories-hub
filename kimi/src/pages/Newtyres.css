@@ -3,3 +3,6 @@
     font-family: sans-serif;
 }
 
+.newtyres-parent{
+    display: flex;
+}

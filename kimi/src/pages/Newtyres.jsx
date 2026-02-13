@@ -1,10 +1,10 @@
+import './Newtyres.css'
 
 
-
-const Buy = () => {
-    <div>
-        
+const Newtyres = () => {
+    <div className='newtyres-parent'>
+        <h1>braaaaaaaaa</h1>
     </div>
 }
 
-export default Buy;
+export default Newtyres;

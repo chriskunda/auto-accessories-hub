@@ -5,6 +5,10 @@ import Feature from './components/Features'
 import Faq from './components/Faq'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+
+import Newtyres from './pages/Newtyres'
+
+
 import './App.css'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -26,7 +30,9 @@ function App() {
             <Footer/>
           </div>
         }></Route>
-        {/* <Route path='/about' element={<About />}></Route> */}
+
+        <Route path='/Newtyres' element={<Newtyres />}></Route>
+
       </Routes>
     </Router>
   )
