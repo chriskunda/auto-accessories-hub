@@ -5,4 +5,40 @@
 
 .newtyres-parent{
     display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sub-newtyres-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: yellow;
+}
+
+.sub-newtyres-parent>div{
+    display: flex;
+    justify-content: center;
+}
+
+.newty-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.crads-newty{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    background-color: red;
+}
+
+.card1, .card2, .card3, .card4, .card5{
+    width: 25%;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
