@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Routes>
         <Route 
-        path='/' element={
+        path='/Home' element={
           <div className='parent-container'>
             <Nav/>
             <Products/>
@@ -30,8 +30,14 @@ function App() {
             <Footer/>
           </div>
         }></Route>
-
-        <Route path='/Newtyres' element={<Newtyres />}></Route>
+        
+        <Route path='/Newtyres' element={
+          <div className='newtyres-page'>
+          <Nav/>
+          <Newtyres />
+          <Footer/>
+          </div>
+          }></Route>
 
       </Routes>
     </Router>

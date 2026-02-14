@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     background-color: yellow;
 }
 
@@ -26,6 +26,19 @@
 .newty-description{
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    background-color: green;
+}
+
+.newty-description>h1{
+    font-size: 65px;
+}
+
+.newty-description>p{
+    width: 60%;
+    margin-top: 10px;
 }
 
 .crads-newty{
@@ -33,12 +46,13 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 30px;
+    margin-top: 30px;
     background-color: red;
 }
 
-.card1, .card2, .card3, .card4, .card5{
+.card1, .card2, .card3, .card4, .card5, .card6{
     width: 25%;
-    height: 250px;
+    height: 300px;
     border: 1px solid black;
     border-radius: 20px;
 }

@@ -1,6 +1,8 @@
 import './Newtyres.css'
 
 
+
+
 const Newtyres = () => {
     return(
     <div className='newtyres-parent'>
@@ -35,6 +37,11 @@ const Newtyres = () => {
                 </div>
 
                 <div className='card5'>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div className='card6'>
                     <div></div>
                     <div></div>
                 </div>
