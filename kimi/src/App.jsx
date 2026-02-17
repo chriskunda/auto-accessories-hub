@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Routes>
         <Route 
-        path='/Home' element={
+        path='/' element={
           <div className='parent-container'>
             <Nav/>
             <Products/>

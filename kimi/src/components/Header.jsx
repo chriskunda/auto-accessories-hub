@@ -10,7 +10,7 @@ const Nav = () => {
                     <i className="fa-solid fa-bars burger-icon"></i>
                 </div>
                 <div className='links'>
-                    <a href="/Home" onClick={() => Navigate()}>Home</a>
+                    <a href="/">Home</a>
                     <a href="">About</a>
                     <a href="#services">Services</a>
                     <a href="#call">Contact</a>
