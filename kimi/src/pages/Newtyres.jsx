@@ -22,8 +22,10 @@ const Newtyres = () => {
                         <img src="" alt="" />
                     </div>
                     <div className='carrd-descri'>
-                        <p>Michelin</p>
-                        <p>120,000 RWF</p>
+                        <h2>Michelin</h2>
+                        <p>Size: 275/50/19</p>
+                        <p>Quantity: 8</p>
+                        <p>Price: 120,000 RWF</p>
                         <button>Add to Cart</button>
                     </div>
 
@@ -35,7 +37,11 @@ const Newtyres = () => {
                         <img src="" alt="" />
                     </div>
                     <div className='carrd-descri'>
-
+                        <h2>Dunlop</h2>
+                        <p>Size: 275/50/19</p>
+                        <p>Quantity: 8</p>
+                        <p>Price: 120,000 RWF</p>
+                        <button>Add to Cart</button>
                     </div>
 
                 </div>
@@ -46,7 +52,11 @@ const Newtyres = () => {
                         <img src="" alt="" />
                     </div>
                     <div className='carrd-descri'>
-
+                        <h2>Bridgestone</h2>
+                        <p>Size: 275/50/19</p>
+                        <p>Quantity: 8</p>
+                        <p>Price: 120,000 RWF</p>
+                        <button>Add to Cart</button>
                     </div>
 
                 </div>
@@ -57,7 +67,11 @@ const Newtyres = () => {
                         <img src="" alt="" />
                     </div>
                     <div className='carrd-descri'>
-
+                        <h2>Road Stone</h2>
+                        <p>Size: 275/50/19</p>
+                        <p>Quantity: 8</p>
+                        <p>Price: 120,000 RWF</p>
+                        <button>Add to Cart</button>
                     </div>
 
                 </div>
@@ -68,7 +82,11 @@ const Newtyres = () => {
                         <img src="" alt="" />
                     </div>
                     <div className='carrd-descri'>
-
+                        <h2>Yokohama</h2>
+                        <p>Size: 275/50/19</p>
+                        <p>Quantity: 8</p>
+                        <p>Price: 120,000 RWF</p>
+                        <button>Add to Cart</button>
                     </div>
 
                 </div>
@@ -79,7 +97,11 @@ const Newtyres = () => {
                         <img src="" alt="" />
                     </div>
                     <div className='carrd-descri'>
-
+                        <h2>Chao Yang</h2>
+                        <p>Size: 275/50/19</p>
+                        <p>Quantity: 8</p>
+                        <p>Price: 120,000 RWF</p>
+                        <button>Add to Cart</button>
                     </div>
 
                 </div>
