@@ -58,7 +58,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>New Rims</h1>
                             <p>A global collection of rims in every size and style</p>
-                            <button className='card-description-button'>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Rims')}>View items</button>
                         </div>
                     </div>
 

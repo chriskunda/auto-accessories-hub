@@ -31,7 +31,7 @@ const Newtyres = () => {
 
                 </div>
 
-                <div className='card2'>
+                <div className='card1'>
 
                     <div className='cards-img'>
                         <img src="" alt="" />
@@ -46,7 +46,7 @@ const Newtyres = () => {
 
                 </div>
 
-                <div className='card3'>
+                <div className='card1'>
 
                     <div className='cards-img'>
                         <img src="" alt="" />
@@ -61,7 +61,7 @@ const Newtyres = () => {
 
                 </div>
 
-                <div className='card4'>
+                <div className='card1'>
 
                     <div className='cards-img'>
                         <img src="" alt="" />
@@ -76,7 +76,7 @@ const Newtyres = () => {
 
                 </div>
 
-                <div className='card5'>
+                <div className='card1'>
 
                     <div className='cards-img'>
                         <img src="" alt="" />
@@ -91,7 +91,7 @@ const Newtyres = () => {
 
                 </div>
 
-                <div className='card6'>
+                <div className='card1'>
 
                     <div className='cards-img'>
                         <img src="" alt="" />
