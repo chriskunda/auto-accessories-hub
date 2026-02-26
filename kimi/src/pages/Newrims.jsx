@@ -14,22 +14,100 @@ const Newrims = () => {
 
                     <div className="rims-cards">
 
-                        <div className="card2"></div>
+                        <div className="card2">
 
-                        <div className="card2"></div>
+                            <div className='rims-cards-img'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='rim-carrd-descri'>
+                                <h2>Grey</h2>
+                                <p>Size: 19</p>
+                                <p>One set</p>
+                                <p>Price: 1,200,000 RWF</p>
+                                <button>Add to Cart</button>
+                            </div>
 
-                        <div className='card2'></div>
+                        </div>
 
-                        <div className='card2'></div>
+                        <div className="card2">
 
-                        <div className='card2'></div>
+                            <div className='rims-cards-img'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='rim-carrd-descri'>
+                                <h2>Grey</h2>
+                                <p>Size: 19</p>
+                                <p>One set</p>
+                                <p>Price: 1,200,000 RWF</p>
+                                <button>Add to Cart</button>
+                            </div>
 
-                        <div className='card2'></div>
+                        </div>
+
+                        <div className='card2'>
+
+                            <div className='rims-cards-img'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='rim-carrd-descri'>
+                                <h2>Grey</h2>
+                                <p>Size: 19</p>
+                                <p>One set</p>
+                                <p>Price: 1,200,000 RWF</p>
+                                <button>Add to Cart</button>
+                            </div>
+
+                        </div>
+
+                        <div className='card2'>
+
+                            <div className='rims-cards-img'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='rim-carrd-descri'>
+                                <h2>Grey</h2>
+                                <p>Size: 19</p>
+                                <p>One set</p>
+                                <p>Price: 1,200,000 RWF</p>
+                                <button>Add to Cart</button>
+                            </div>
+
+                        </div>
+
+                        <div className='card2'>
+
+                            <div className='rims-cards-img'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='rim-carrd-descri'>
+                                <h2>Grey</h2>
+                                <p>Size: 19</p>
+                                <p>One set</p>
+                                <p>Price: 1,200,000 RWF</p>
+                                <button>Add to Cart</button>
+                            </div>
+
+                        </div>
+
+                        <div className='card2'>
+
+                            <div className='rims-cards-img'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='rim-carrd-descri'>
+                                <h2>Grey</h2>
+                                <p>Size: 19</p>
+                                <p>One set</p>
+                                <p>Price: 1,200,000 RWF</p>
+                                <button>Add to Cart</button>
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
-                
+
             </div>
         )
 }

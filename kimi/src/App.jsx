@@ -38,13 +38,17 @@ function App() {
           <div className='newtyres-page'>
             <Nav/>
             <Newtyres />
+            <Contact/>
             <Footer/>
           </div>
           }></Route>
           
           <Route path='/Rims' element={
             <div className='Rims-page'>
-              <Newrims/>  
+              <Nav/>
+              <Newrims/>
+              <Contact/>
+              <Footer/>
             </div>
           }>
 
