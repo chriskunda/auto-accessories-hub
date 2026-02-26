@@ -1,1 +1,37 @@
 
+.rims-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+}
+
+.rims-decsri{
+    display: flex;
+    flex-direction: column;
+}
+
+.rims-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card2{
+    width: 25%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.sub-rims-parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: yellow;
+}
