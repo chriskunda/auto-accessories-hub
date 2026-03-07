@@ -1,3 +1,6 @@
+// Scroll to top
+import ScrollToTop from './components/ScrollTotop'
+
 // Components
 import Nav from './components/Header'
 import Products from './components/Product'
@@ -20,6 +23,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route 
         path='/' element={

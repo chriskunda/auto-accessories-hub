@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import './Offer.css'
 import New from '../assets/newtyres.webp'
 import Used from '../assets/usedtyres.jpg'
@@ -12,6 +14,13 @@ const Offer = () => {
 
     const navigate = useNavigate();
 
+    useEffect(() => {
+        const chris = () => {
+            const x = "Remy"
+            console.log("Hi", x)
+        }
+        chris()
+    }, [])
   
 
 
