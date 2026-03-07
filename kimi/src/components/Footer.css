@@ -1,91 +1,186 @@
-.parent-footer{
-    background: linear-gradient(to bottom, #f0f2f4, #8d8f8f);
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+
+:root {
+  --accent:   #8B3A2A;
+  --accent-l: rgba(139, 58, 42, 0.1);
+  --accent-b: rgba(139, 58, 42, 0.2);
+  --bg:       #f8f6f4;
+  --white:    #ffffff;
+  --border:   #ede8e5;
+  --text:     #1a1a1a;
+  --muted:    #888888;
+}
+
+.parent-footer {
+    background: linear-gradient(160deg, #ffffff 0%, #f5eeeb 100%);
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
+    border-top: 1px solid var(--border);
 }
 
-.sub-parent-footer{
+.sub-parent-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    height: 500px;
-    margin-top: 60px;
+    height: auto;
+    padding: 60px 0 10px;
+    gap: 40px;
 }
 
-.footer-links{
+/* ── LINKS GRID ── */
+.footer-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    width: 80%;
+    width: 100%;
 }
 
-.link{
+.link {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
-.link>h2{
-    padding-bottom: 20px;
+.link > h2 ,.soocial{
+
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--text);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
 }
 
-.link>i>a{
+.link > i {
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.link > i:hover {
+    color: var(--accent);
+}
+
+.link > i > a,
+.link > i > span {
     text-decoration: none;
-    color: black;
-    font-weight: normal;
+    color: var(--muted);
+    font-family: "Jost", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    transition: color 0.2s;
 }
 
-.link>a{
+.link > i:hover > a,
+.link > i:hover > span {
+    color: var(--accent);
+}
+
+.link > a {
     text-decoration: none;
-    color: black;
-    font-weight: normal;
+    color: var(--muted);
+    font-family: "Jost", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    transition: color 0.2s;
 }
 
-.open{
+.link > a:hover {
+    color: var(--accent);
+}
+
+.open {
     margin-left: 10px;
 }
 
-.sc2{
+/* ── SOCIAL ICONS ── */
+.sc2 {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    gap: 15px;
+    gap: 12px;
 }
 
-.line{
-    width: 90%;
+.sc2 > i {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1.5px solid var(--accent-b);
+    color: var(--accent);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.line>hr{
-    height: 0.5px;
-    background-color: black;
-    border: 1px solid black;
+.sc2 > i:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
+}
+
+/* ── DIVIDER ── */
+.line {
+    width: 100%;
+}
+
+.line > hr {
+    height: 1px;
+    background-color: var(--border);
+    border: none;
     border-radius: 5px;
 }
 
-.hero{
+/* ── BIG BACKGROUND TEXT ── */
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
-    overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100%;
+    padding: 0 1rem;
 }
 
-
 .hero-bg-text {
-    width: 90%;
-    height: 140px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: clamp(48px, 8vw, 100px);
+    font-weight: 900;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    background: linear-gradient(135deg, rgba(139,58,42,0.08) 0%, rgba(26,26,26,0.06) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+ 
+}
 
-    width: max-content;
-    font-size: 100px; 
-    color: rgba(0, 0, 0, 0.125);
+/* ── COPYRIGHT ── */
+.foot-p {
+    font-family: "Jost", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .sub-parent-footer {
+        width: 90%;
+    }
 }

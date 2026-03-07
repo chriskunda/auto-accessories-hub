@@ -1,59 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-.parent-contact{
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+
+:root {
+  --accent:   #8B3A2A;
+  --accent-l: rgba(139, 58, 42, 0.1);
+  --accent-b: rgba(139, 58, 42, 0.2);
+  --bg:       #f8f6f4;
+  --white:    #ffffff;
+  --border:   #ede8e5;
+  --text:     #1a1a1a;
+  --muted:    #888888;
+}
+
+.parent-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    min-height: 500px;
     width: 100%;
-    background-color: #f4f5f6;
+    background: linear-gradient(160deg, #ffffff 0%, #f5eeeb 100%);
+    border-top: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 24px;
+    text-align: center;
 }
 
-.parent-contact>h1{
-    font-size: 40px;
+/* background decorations */
+.parent-contact::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse 60% 55% at 50% 110%, rgba(139, 58, 42, 0.1) 0%, transparent 70%);
+}
+
+.parent-contact::after {
+    content: '';
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 1px solid rgba(139, 58, 42, 0.07);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.parent-contact > h1 {
+    position: relative;
     font-family: "Bricolage Grotesque", sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 900;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    line-height: 1.1;
+    margin: 0 0 16px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #8B3A2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.p2{
+.p2 {
+    position: relative;
     margin-top: 5px;
     text-align: center;
-    font-family: "Jost", sans-serif;
+    font-family: 'Saira', sans-serif;
+    color: var(--muted);
+    line-height: 1.85;
+    margin-bottom: 8px;
 }
 
-.call-links{
+.call-links {
+    position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 320px;
 }
 
-.call-links>a{
-    margin-top: 35px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid grey;
-    background-color: rgba(215, 215, 215, 0.747);
+.call-links > a {
+    margin-top: 12px;
+    padding: 13px 28px;
+    border-radius: 999px;
+    border: 1.5px solid var(--accent-b);
+    background: var(--accent);
     text-align: center;
     text-decoration: none;
-    color: black;
-}
-
-.call-links>a:hover{
-    background-color: rgba(198, 249, 198, 0.774);
-    border: 1px solid green;
-    cursor: pointer;
-    color: green;
-}
-
-.call-links>i>a{
+    color: var(--white);
+    font-family: 'Saira', sans-serif;
+    font-size: 11px;
     font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
 }
 
-.call{
-    margin-top: 30px;
+.call-links > a:hover {
+    background: transparent;
+    border-color: var(--accent);
+    color: var(--accent);
+    cursor: pointer;
 }
 
-.call>a{
-    color: black;
+.call {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 28px;
+    border-radius: 999px;
+    border: 1.5px solid var(--accent-b);
+    color: var(--accent);
+    font-family: 'Saira', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    list-style: none;
+}
+
+.call:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.call:hover > a {
+    color: var(--white);
+}
+
+.call > a {
+    color: var(--accent);
     text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: color 0.2s;
 }

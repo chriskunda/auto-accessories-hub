@@ -5,15 +5,17 @@
     margin: 0;
     font-family: sans-serif;  
     font-variant-numeric: tabular-nums;
-  
+    overflow-x: hidden;
 }
 
-h1,h2{
+h1,h2,i,span{
     font-family: "Bricolage Grotesque", sans-serif;
+    overflow-y: hidden;
 }
 
 p,a{
     font-family: "Jost", sans-serif;
+    overflow-y: hidden;
 }
 
 html{

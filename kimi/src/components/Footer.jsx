@@ -30,7 +30,7 @@ const Footer = () => {
                         <a href="">Privacy Policy</a>
                     </div>
                     <div className='link'>
-                        <div>
+                        <div className="soocial">
                             <h2>Social Media</h2>
                         </div>
                         <div className="sc2">
