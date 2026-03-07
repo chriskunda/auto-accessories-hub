@@ -9,7 +9,8 @@ const Newrims = () => {
 
                     <div className="rims-decsri">
                         <h1>New Rims</h1>
-                        <p>alot more of them</p>
+                        <p>Elevate your vehicle’s profile with our latest collection of precision-engineered alloys.
+                            Where high-end aesthetics meet the road, turning every drive into a statement of elegance.</p>
                     </div>
 
                     <div className="rims-cards">

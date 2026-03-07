@@ -18,10 +18,11 @@ const Footer = () => {
                     </div>
                     <div className='link'>
                         <h2>Our services</h2>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Used tyres</a></i>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">New tyres & Rims</a></i>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Wheel allignment</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Used Tyres</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">New Tyres</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">New Rims</a></i>
                         <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Oil change</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Wheel allignment</a></i>
                     </div>
                     <div className='link'>
                         <h2>Legal</h2>

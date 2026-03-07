@@ -9,10 +9,15 @@
 .rims-decsri{
     display: flex;
     flex-direction: column;
+    width: 60%;
+    align-items: center;
+    text-align: center;
 }
 
 .rims-decsri>h1{
     margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 50px;
 }
 
 .rims-cards{
