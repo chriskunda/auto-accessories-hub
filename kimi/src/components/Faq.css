@@ -1,109 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-.parent-faq{
+:root {
+  --accent:   #8B3A2A;
+  --accent-l: rgba(139, 58, 42, 0.1);
+  --accent-b: rgba(139, 58, 42, 0.2);
+  --bg:       #f8f6f4;
+  --white:    #ffffff;
+  --border:   #ede8e5;
+  --text:     #1a1a1a;
+  --muted:    #888888;
+}
+
+/* ── PARENT ── */
+.parent-faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 80px 20px;
     height: auto;
-    padding-bottom: 45px;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
-.faq-leftside{
+/* ── HEADER ── */
+.faq-leftside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
     height: auto;
+    margin-bottom: 8px;
 }
 
-.faq-leftside>h1{
-    font-size: 58px;
+.faq-leftside > h1 {
+    font-family: 'Saira', sans-serif;
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     padding-top: 20px;
-    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a 0%, #8B3A2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.faq-leftside>p{
-    padding-top: 15px;
+.faq-leftside > p {
+    padding-top: 16px;
     width: 50%;
     text-align: center;
-    font-family: "Jost", sans-serif;
+    font-family: 'Saira', sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.85;
 }
 
-.faq-rightside{
+/* ── ACCORDION ── */
+.faq-rightside {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    width: 45%;
+    gap: 12px;
+    width: 55%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 48px;
 }
 
-.faq-rightside-div1{
+.faq-rightside-div1,
+.faq-rightside-div2,
+.faq-rightside-div3 {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    background-color: #f4f5f6;
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 12px;
-    transition: max-height 0.4s ease;
-}
-
-.faq-rightside-div1:hover{
-    max-height: 90px;
+    padding: 20px 24px;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    max-height: 20px;
+    transition: max-height 0.6s ease, border-color 0.30s ease, box-shadow 0.30s ease;
     cursor: pointer;
 }
-.faq-rightside-div1-p1{
+
+.faq-rightside-div1:hover,
+.faq-rightside-div2:hover,
+.faq-rightside-div3:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 32px rgba(139, 58, 42, 0.1);
+    max-height: 82px;
+}
+
+.faq-rightside-div1:hover { max-height: 140px; }
+.faq-rightside-div2:hover { max-height: 360px; }
+.faq-rightside-div3:hover { max-height: 140px; }
+
+/* question text */
+.faq-rightside-div1-p1,
+.faq-rightside-div2-p1,
+.faq-rightside-div3-p1 {
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--text);
     padding-bottom: 20px;
-    font-family: "Bricolage Grotesque", sans-serif;
 }
 
-.faq-rightside-div2{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: #f4f5f6;
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 12px;
-    transition: max-height 0.4s ease;
-}
-
-.faq-rightside-div2:hover{
-    max-height: 260px;
-    cursor: pointer;
-}
-
-.faq-rightside-div2-p1>{
-    height: 25px;
-}
-
-
-
-.faq-rightside-div3{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: #f4f5f6;
-    border-radius: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 12px;
-    transition: max-height 0.4s ease;
-}
-
-.faq-rightside-div3:hover{
-    max-height: 90px;
-    cursor: pointer;
-}
-
-.faq-rightside-div3-p1{
-    padding-bottom: 20px;
-    font-family: "Bricolage Grotesque", sans-serif;
+/* answer text */
+.faq-rightside-div1-p2,
+.faq-rightside-div2-p2,
+.faq-rightside-div3-p2 {
+    font-family: 'Saira', sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.85;
 }

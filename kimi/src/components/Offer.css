@@ -1,117 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-.parent-offer{
+:root {
+  --accent:   #8B3A2A;
+  --accent-l: rgba(139, 58, 42, 0.1);
+  --accent-b: rgba(139, 58, 42, 0.2);
+  --bg:       #f8f6f4;
+  --white:    #ffffff;
+  --border:   #ede8e5;
+  --text:     #1a1a1a;
+  --muted:    #888888;
+}
+
+/* ── PARENT ── */
+.parent-offer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 920px;
     width: 100%;
-    
+    padding: 80px 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
 }
 
-.offer-words{
+/* ── SECTION HEADER ── */
+.offer-words {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
-.offer-words-h1{
+.offer-words > p {
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-l);
+    border: 1px solid var(--accent-b);
+    padding: 6px 20px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.offer-words > p:last-child {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    color: var(--muted);
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.offer-words-h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 75px;
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: 'Saira', sans-serif;
+    font-size: clamp(40px, 6vw, 75px);
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #1a1a1a 0%, #8B3A2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
 }
 
-.offer-words>p{
-    text-align: center;
-    font-family: "Jost", sans-serif;
-}
-
-.offer-cards{
+/* ── CARDS GRID ── */
+.offer-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow-x: hidden;
-    width: 80%;
-    height: 700px;
+    width: 85%;
     gap: 20px;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
-
-.item-card{
+/* ── SINGLE CARD ── */
+.item-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 1px 1px 9px grey;
+    background: var(--white);
+    border: 1.5px solid var(--border);
     border-radius: 20px;
     width: 30%;
     height: 320px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    animation: fadeUp 0.5s ease both;
 }
 
-.item-card:hover{
-    box-shadow: 2px 2px 10px grey;
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
-.btn{
-    border: 1px solid rgba(166, 168, 171, 0.393);
-    border-radius: 12px;
-    padding: 5px 15px;
-    font-family: "Jost", sans-serif;
-    cursor: pointer;
-    text-align: center;
-    background-color: buttonface;
-    color: black;
-    text-decoration: none;
+.item-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 48px rgba(139, 58, 42, 0.15), 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.btn:hover{
-    background-color: #dcdcdda2;
-}
-
-.card-foto{
+/* ── CARD IMAGE ── */
+.card-foto {
     overflow: hidden;
     height: auto;
 }
 
-.card-foto>img{
+.card-foto > img {
     width: 100%;
-    height: 195px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom: 1px solid black;
+    height: 185px;
+    object-fit: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom: 1px solid var(--border);
+    transition: transform 0.45s ease;
 }
 
-.card-description{
+.item-card:hover .card-foto > img {
+    transform: scale(1.05);
+}
+
+/* ── CARD BODY ── */
+.card-description {
     display: flex;
     flex-direction: column;
-    gap: 9px;
-    padding: 10px;
-
+    gap: 6px;
+    padding: 12px 14px 14px;
 }
 
-.card-description>h1{
-    font-family: "Bricolage Grotesque", sans-serif;
+.card-description > h1 {
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text);
 }
 
-.card-description>p{
-    font-family: "Jost", sans-serif;
-    width: max-content;
+.card-description > p {
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
 }
 
-.card-description-button{
-    border: 1px solid rgba(166, 168, 171, 0.393);
-    border-radius: 12px;
-    padding: 7px 15px;
-    font-family: "Jost", sans-serif;
+/* ── BUTTONS ── */
+.btn,
+.card-description-button {
+    border: 1.5px solid var(--accent-b);
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-family: 'Saira', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
+    background: transparent;
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    align-self: flex-start;
 }
 
-.card-description-button:hover{
-    background-color: #dcdcdda2;
+.btn:hover,
+.card-description-button:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
 }
-
-
