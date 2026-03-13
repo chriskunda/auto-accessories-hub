@@ -14,13 +14,6 @@ const Offer = () => {
 
     const navigate = useNavigate();
 
-    useEffect(() => {
-        const chris = () => {
-            const x = "Remy"
-            console.log("Hi", x)
-        }
-        chris()
-    }, [])
   
 
 

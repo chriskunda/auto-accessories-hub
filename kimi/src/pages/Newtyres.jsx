@@ -8,6 +8,7 @@ const products = [
   { id: 4, name: 'Road Stone',  size: '275/50/19', quantity: 8, price: '120,000', badge: '' },
   { id: 5, name: 'Yokohama',    size: '275/50/19', quantity: 8, price: '120,000', badge: 'NEW' },
   { id: 6, name: 'Chao Yang',   size: '275/50/19', quantity: 8, price: '120,000', badge: '' },
+  { id: 7, name: 'Road King', size: '215/70/16', quantity: 10, price: '150.000', badge: 'SALE'},
 ];
 
 const TyreSVG = () => (
@@ -70,8 +71,9 @@ const Newtyres = () => {
         <div className="tyres-hero-bg" />
         <div className="tyres-hero-circle" />
         <div className="tyres-hero-circle2" />
+
         <span className="tyres-badge">2025 Collection</span>
-        <h1 className="tyres-title">NeW TYReS</h1>
+        <h1 className="tyres-title">NEW TYRES</h1>
         <p className="tyres-subtitle">
           Below there is variety of brands of the new tyres we provide. Take a look and add to cart whichever you would like to purchase.
         </p>
@@ -81,6 +83,7 @@ const Newtyres = () => {
 
         {/* Filters */}
         <div className="tyres-filters-bar">
+
           <div className="tyres-filters">
             {['all', 'NEW', 'SALE'].map(f => (
               <button
@@ -108,6 +111,7 @@ const Newtyres = () => {
                 </span>
               )}
 
+              {/* Cards image */}
               <div className="tyres-cards-img">
                 <TyreSVG />
               </div>
