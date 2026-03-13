@@ -2,38 +2,14 @@ import { useState } from 'react';
 import './Newtyres.css';
 
 const products = [
-  { id: 1, name: 'Michelin',    size: '275/50/19', quantity: 8, price: '120,000', badge: 'NEW' },
-  { id: 2, name: 'Dunlop',      size: '275/50/19', quantity: 8, price: '120,000', badge: '' },
-  { id: 3, name: 'Bridgestone', size: '275/50/19', quantity: 8, price: '120,000', badge: 'SALE' },
-  { id: 4, name: 'Road Stone',  size: '275/50/19', quantity: 8, price: '120,000', badge: '' },
-  { id: 5, name: 'Yokohama',    size: '275/50/19', quantity: 8, price: '120,000', badge: 'NEW' },
-  { id: 6, name: 'Chao Yang',   size: '275/50/19', quantity: 8, price: '120,000', badge: '' },
-  { id: 7, name: 'Road King', size: '215/70/16', quantity: 10, price: '150.000', badge: 'SALE'},
+  { id: 1, name: 'Michelin',    size: '275/50/19', quantity: 8,  price: '120,000', badge: 'NEW',  photo: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&q=80' },
+  { id: 2, name: 'Dunlop',      size: '275/50/19', quantity: 8,  price: '120,000', badge: '',     photo: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=500&q=80' },
+  { id: 3, name: 'Bridgestone', size: '275/50/19', quantity: 8,  price: '120,000', badge: 'SALE', photo: 'https://images.unsplash.com/photo-1568772585019-cca1cfe5d8a7?w=500&q=80' },
+  { id: 4, name: 'Road Stone',  size: '275/50/19', quantity: 8,  price: '120,000', badge: '',     photo: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&q=80' },
+  { id: 5, name: 'Yokohama',    size: '275/50/19', quantity: 8,  price: '120,000', badge: 'NEW',  photo: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=500&q=80' },
+  { id: 6, name: 'Chao Yang',   size: '275/50/19', quantity: 8,  price: '120,000', badge: '',     photo: 'https://images.unsplash.com/photo-1568772585019-cca1cfe5d8a7?w=500&q=80' },
+  { id: 7, name: 'Road King',   size: '215/70/16', quantity: 10, price: '150,000', badge: 'SALE', photo: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&q=80' },
 ];
-
-const TyreSVG = () => (
-  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="tyre-svg">
-    {/* Outer tyre wall */}
-    <circle cx="50" cy="50" r="44" fill="none" stroke="#8B3A2A" strokeWidth="10" opacity="0.25" />
-    {/* Tread blocks */}
-    {Array.from({ length: 16 }).map((_, i) => {
-      const angle = (i / 16) * 360;
-      const rad = (angle - 90) * Math.PI / 180;
-      const x1 = 50 + 38 * Math.cos(rad);
-      const y1 = 50 + 38 * Math.sin(rad);
-      const x2 = 50 + 44 * Math.cos(rad);
-      const y2 = 50 + 44 * Math.sin(rad);
-      return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#8B3A2A" strokeWidth="4" strokeLinecap="round" opacity="0.5" />;
-    })}
-    {/* Inner rim edge */}
-    <circle cx="50" cy="50" r="30" fill="none" stroke="#8B3A2A" strokeWidth="1.5" opacity="0.3" />
-    {/* Rim face */}
-    <circle cx="50" cy="50" r="28" fill="#f5eeeb" stroke="#8B3A2A" strokeWidth="1" opacity="0.6" />
-    {/* Hub */}
-    <circle cx="50" cy="50" r="7"   fill="#f5eeeb" stroke="#8B3A2A" strokeWidth="2" opacity="0.9" />
-    <circle cx="50" cy="50" r="3"   fill="#8B3A2A" opacity="1" />
-  </svg>
-);
 
 const Newtyres = () => {
   const [addedIds, setAddedIds] = useState(new Set());
@@ -41,7 +17,7 @@ const Newtyres = () => {
   const [activeFilter, setFilter] = useState('all');
   const [toast, setToast] = useState(false);
 
-  const filtered = activeFilter === 'all'
+  const filtered = (activeFilter === 'all')
     ? products
     : products.filter(p => p.badge === activeFilter);
 
@@ -71,7 +47,6 @@ const Newtyres = () => {
         <div className="tyres-hero-bg" />
         <div className="tyres-hero-circle" />
         <div className="tyres-hero-circle2" />
-
         <span className="tyres-badge">2025 Collection</span>
         <h1 className="tyres-title">NEW TYRES</h1>
         <p className="tyres-subtitle">
@@ -83,7 +58,6 @@ const Newtyres = () => {
 
         {/* Filters */}
         <div className="tyres-filters-bar">
-
           <div className="tyres-filters">
             {['all', 'NEW', 'SALE'].map(f => (
               <button
@@ -111,9 +85,8 @@ const Newtyres = () => {
                 </span>
               )}
 
-              {/* Cards image */}
               <div className="tyres-cards-img">
-                <TyreSVG />
+                <img src={p.photo} alt={p.name} className="tyre-img" />
               </div>
 
               <div className="tyre-carrd-descri">

@@ -2,16 +2,13 @@ import { useState } from 'react';
 import './Newrims.css';
 
 const products = [
-  { id: 1, name: 'Phantom',  color: 'Gunmetal',     size: 19, finish: 'Matte',       price: '1,200,000', badge: 'NEW' },
-  { id: 2, name: 'Eclipse',  color: 'Gloss Black',  size: 19, finish: 'Gloss',       price: '1,350,000', badge: '' },
-  { id: 3, name: 'Vortex',   color: 'Silver',       size: 20, finish: 'Polished',    price: '1,500,000', badge: 'SALE' },
-  { id: 4, name: 'Stealth',  color: 'Matte Black',  size: 20, finish: 'Satin',       price: '1,450,000', badge: '' },
-  { id: 5, name: 'Razor',    color: 'Hyper Silver', size: 21, finish: 'Diamond-Cut', price: '1,750,000', badge: 'NEW' },
-  { id: 6, name: 'Abyss',    color: 'Anthracite',   size: 21, finish: 'Dark Tint',   price: '1,650,000', badge: '' },
+  { id: 1, name: 'Phantom',  color: 'Gunmetal',     size: 19, finish: 'Matte',       price: '1,200,000', badge: 'NEW',  photo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80' },
+  { id: 2, name: 'Eclipse',  color: 'Gloss Black',  size: 19, finish: 'Gloss',       price: '1,350,000', badge: '',     photo: 'https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=500&q=80' },
+  { id: 3, name: 'Vortex',   color: 'Silver',       size: 20, finish: 'Polished',    price: '1,500,000', badge: 'SALE', photo: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80' },
+  { id: 4, name: 'Stealth',  color: 'Matte Black',  size: 20, finish: 'Satin',       price: '1,450,000', badge: '',     photo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80' },
+  { id: 5, name: 'Razor',    color: 'Hyper Silver', size: 21, finish: 'Diamond-Cut', price: '1,750,000', badge: 'NEW',  photo: 'https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=500&q=80' },
+  { id: 6, name: 'Abyss',    color: 'Anthracite',   size: 21, finish: 'Dark Tint',   price: '1,650,000', badge: '',     photo: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80' },
 ];
-
-
-const SPOKES = [0, 51, 103, 154, 206, 257, 309];
 
 const Newrims = () => {
   const [addedIds, setAddedIds]   = useState(new Set());
@@ -29,7 +26,6 @@ const Newrims = () => {
     setTimeout(() => {
       setAddedIds(prev => { const s = new Set(prev); s.delete(id); return s; });
     }, 2000);
-    console.log(addedIds)
     setTimeout(() => setToast(false), 2400);
   };
 
@@ -90,18 +86,7 @@ const Newrims = () => {
               )}
 
               <div className="rims-cards-img">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="rim-svg">
-                  <circle cx="50" cy="50" r="44" fill="none" stroke="#8B3A2A" strokeWidth="4" opacity="0.35"/>
-                  <circle cx="50" cy="50" r="36" fill="none" stroke="#8B3A2A" strokeWidth="1.5" opacity="0.2"/>
-                  {SPOKES.map((angle, idx) => (
-                    <line key={idx} x1="50" y1="50"
-                      x2={50 + 36 * Math.cos((angle - 90) * Math.PI / 180)}
-                      y2={50 + 36 * Math.sin((angle - 90) * Math.PI / 180)}
-                      stroke="#8B3A2A" strokeWidth="3.5" strokeLinecap="round" opacity="0.65"/>
-                  ))}
-                  <circle cx="50" cy="50" r="9" fill="#f5eeeb" stroke="#8B3A2A" strokeWidth="2" opacity="0.9"/>
-                  <circle cx="50" cy="50" r="3.5" fill="#8B3A2A" opacity="1"/>
-                </svg>
+                <img src={p.photo} alt={p.name} className="rim-img" />
               </div>
 
               <div className="rim-carrd-descri">
