@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --accent:   #8B3A2A;
@@ -58,7 +59,7 @@
 }
 
 .first-description > h1 {
-    font-family: 'Saira', sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: clamp(36px, 5.5vw, 72px);
     font-weight: 900;
     letter-spacing: 2px;
@@ -75,7 +76,7 @@
 }
 
 .second-description > p {
-    font-family: 'Saira', sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 16px;
     color: var(--muted);
     padding-top: 20px;
@@ -97,7 +98,7 @@
     border-radius: 999px;
     border: 1.5px solid var(--accent);
     background: var(--accent);
-    font-family: 'Saira', sans-serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
