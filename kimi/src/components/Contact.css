@@ -162,11 +162,12 @@
 .call:hover { color: var(--white); }
 .call:hover > a { color: var(--white); }
 
+/* Call Button */
 .call > a {
     color: var(--accent);
     text-decoration: none;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
     transition: color 0.3s ease;
