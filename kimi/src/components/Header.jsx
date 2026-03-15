@@ -1,4 +1,5 @@
 import './Header.css'
+import { BsCart3 } from 'react-icons/bs'
 
 import { Navigate, useNavigate } from 'react-router-dom'
 
@@ -15,8 +16,11 @@ const Nav = () => {
                     <a href="#services">Services</a>
                     <a href="#call">Contact</a>
                 </div>
-                <div className='icon'>
-                    <h1>Automobile.</h1>
+                <div className='AddtoCart'>
+
+                        <BsCart3 className='cart-icon' />
+                        <span className='cart-span'>0</span>
+
                 </div>
             </div>
         </nav>

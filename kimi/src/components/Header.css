@@ -23,10 +23,11 @@ nav{
 }
 
 .links{
-    width: 55%;
+    width: 70%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: end;
+    gap: 90px;
 }
 
 
@@ -64,6 +65,32 @@ nav{
     transform-origin: bottom left; /* Makes the line grow from left to right */
 }
 
-.icon{
-    display: none;
+.AddtoCart{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 30%;
+    height: 70px;
+}
+
+.cart-icon{
+    margin-right: 70px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.cart-span{
+    margin-right: 70px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-size: small;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
 }

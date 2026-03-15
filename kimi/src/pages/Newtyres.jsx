@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './Newtyres.css';
+import Nav from '../components/Header'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const products = [
   { id: 1, name: 'Michelin',    size: '275/50/19', quantity: 8,  price: '120,000', badge: 'NEW',  photo: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&q=80' },
@@ -40,7 +43,9 @@ const Newtyres = () => {
   };
 
   return (
+    
     <div className="tyres-parent">
+      <Nav/>
 
       {/* Hero */}
       <div className="tyres-hero">
@@ -124,9 +129,8 @@ const Newtyres = () => {
       {/* Toast */}
       <div className={`tyres-toast ${toast ? 'show' : ''}`}>Added to cart ✓</div>
 
-      <div className='tyres-toast'>Added to cart ✓</div>
-      <div className='tyres-toast show'>Added to cart ✓</div>
-
+          <Contact/>
+          <Footer/>
     </div>
   );
 };

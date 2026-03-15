@@ -38,25 +38,8 @@ function App() {
           </div>
         }></Route>
         
-        <Route path='/Newtyres' element={
-          <div className='newtyres-page'>
-            <Nav/>
-            <Newtyres />
-            <Contact/>
-            <Footer/>
-          </div>
-          }></Route>
-          
-          <Route path='/Rims' element={
-            <div className='Rims-page'>
-              <Nav/>
-              <Newrims/>
-              <Contact/>
-              <Footer/>
-            </div>
-          }>
-
-          </Route>
+        <Route path='/Newtyres' element={<Newtyres />}></Route>          
+        <Route path='/Rims' element={<Newrims/>}></Route>
 
       </Routes>
     </Router>

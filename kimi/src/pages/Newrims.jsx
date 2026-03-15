@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import './Newrims.css';
+import Nav from '../components/Header'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+import { useCart } from './CartContext'; // 👈 step 1: import the hook
 
 const products = [
   { id: 1, name: 'Phantom',  color: 'Gunmetal',     size: 19, finish: 'Matte',       price: '1,200,000', badge: 'NEW',  photo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80' },
@@ -11,7 +15,12 @@ const products = [
 ];
 
 const Newrims = () => {
-  const [addedIds, setAddedIds]   = useState(new Set());
+  const { addToCart, cartItems } = useCart(); // 👈 step 2: get addToCart from the shared box
+
+  // build addedIds FROM the shared cart, not local state
+  // checks which product IDs are already in the cart
+  const addedIds = new Set(cartItems.map(item => item.id));
+
   const [lovedIds, setLovedIds]   = useState(new Set());
   const [activeFilter, setFilter] = useState('all');
   const [toast, setToast]         = useState(false);
@@ -20,12 +29,9 @@ const Newrims = () => {
     ? products
     : products.filter(p => p.size === parseInt(activeFilter));
 
-  const addToCart = (id) => {
-    setAddedIds(prev => new Set(prev).add(id));
+  const handleAddToCart = (p) => {
+    addToCart(p);  // 👈 pass the whole product object, not just the id
     setToast(true);
-    setTimeout(() => {
-      setAddedIds(prev => { const s = new Set(prev); s.delete(id); return s; });
-    }, 2000);
     setTimeout(() => setToast(false), 2400);
   };
 
@@ -40,8 +46,7 @@ const Newrims = () => {
 
   return (
     <div className="rims-parent">
-
-      {/* Hero */}
+      <Nav/>
       <div className="rims-hero">
         <div className="rims-hero-bg" />
         <div className="rims-hero-circle" />
@@ -55,8 +60,6 @@ const Newrims = () => {
       </div>
 
       <div className="sub-rims-parent">
-
-        {/* Filters */}
         <div className="rims-filters-bar">
           <div className="rims-filters">
             {['all', '19', '20', '21'].map(f => (
@@ -74,21 +77,17 @@ const Newrims = () => {
           </span>
         </div>
 
-        {/* Cards */}
         <div className="rims-cards">
           {filtered.map((p, i) => (
             <div className="card2" key={p.id} style={{ animationDelay: `${i * 0.07}s` }}>
-
               {p.badge && (
                 <span className={`card-badge ${p.badge === 'SALE' ? 'badge-sale' : 'badge-new'}`}>
                   {p.badge}
                 </span>
               )}
-
               <div className="rims-cards-img">
                 <img src={p.photo} alt={p.name} className="rim-img" />
               </div>
-
               <div className="rim-carrd-descri">
                 <div className="card-top-row">
                   <h2 className="card-name">{p.name}</h2>
@@ -102,7 +101,7 @@ const Newrims = () => {
                 <div className="card-actions">
                   <button
                     className={`btn-cart ${addedIds.has(p.id) ? 'added' : ''}`}
-                    onClick={() => addToCart(p.id)}
+                    onClick={() => handleAddToCart(p)}
                   >
                     {addedIds.has(p.id) ? 'Added ✓' : 'Add to Cart'}
                   </button>
@@ -114,16 +113,14 @@ const Newrims = () => {
                   </button>
                 </div>
               </div>
-
             </div>
           ))}
         </div>
-
       </div>
 
-      {/* Toast */}
       <div className={`rims-toast ${toast ? 'show' : ''}`}>Added to cart ✓</div>
-
+      <Contact/>
+      <Footer/>
     </div>
   );
 };
