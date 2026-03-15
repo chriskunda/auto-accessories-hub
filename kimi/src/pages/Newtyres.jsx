@@ -124,6 +124,9 @@ const Newtyres = () => {
       {/* Toast */}
       <div className={`tyres-toast ${toast ? 'show' : ''}`}>Added to cart ✓</div>
 
+      <div className='tyres-toast'>Added to cart ✓</div>
+      <div className='tyres-toast show'>Added to cart ✓</div>
+
     </div>
   );
 };

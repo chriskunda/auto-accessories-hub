@@ -234,7 +234,7 @@
 .tyre-card:hover .tyre-img {
   transform: scale(1.06);
   filter: brightness(0.92);
-}
+aa}
 
 /* Card body */
 .tyre-carrd-descri {
@@ -375,3 +375,6 @@
   .tyres-cards { grid-template-columns: 1fr; }
   .tyres-filters-bar { flex-direction: column; gap: 12px; align-items: flex-start; }
 }
+
+
+
