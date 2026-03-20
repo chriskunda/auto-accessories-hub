@@ -4,7 +4,15 @@ import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+import { useCart } from './CartContext';
+
+
 const Newrims = () => {
+
+    const {addToCart} = useCart();
+
+
+
     return (
         <div className="rims-parent">
             <Nav/>
@@ -40,7 +48,11 @@ const Newrims = () => {
                                 <span className="spec-tag">One set</span>
                             </div>
                             <div className="card-actions">
-                                <button className="btn-cart">Add to Cart</button>
+                                <button 
+                                    className="btn-cart"
+                                    onClick={() => addToCart({name: "Gretgtgtgy", price: 1200000000000})}
+                                >
+                                    Add to Cart</button>
                                 <button className="btn-wish">♡</button>
                             </div>
                         </div>

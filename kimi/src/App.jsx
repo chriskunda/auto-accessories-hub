@@ -15,7 +15,9 @@ import Newtyres from './pages/Newtyres'
 import Newrims from './pages/Newrims'
 import Accessories from './pages/Accessories'
 import Oil from './pages/Oil'
+import Cart from './pages/Cart'
 
+import { CartProvider } from './pages/CartContext' /*i imported this to wrap every components that will need cart*/
 
 import './App.css'
 
@@ -24,30 +26,32 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route 
-        path='/' element={
-          <div className='parent-container'>
-            <Nav/>
-            <Products/>
-            <Offer/>
-            <Feature/>
-            <Faq/>
-            <Contact/>
-            <Footer/>
-          </div>
-        }></Route>
-        
-        <Route path='/Newtyres' element={<Newtyres />}></Route>          
-        <Route path='/Rims' element={<Newrims/>}></Route>
-        <Route path='/Accessories' element={<Accessories/>}></Route>
-        <Route path='/Oil' element={<Oil/>}></Route>
+    <CartProvider>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+            <Route 
+            path='/' element={
+              <div className='parent-container'>
+                <Nav/>
+                <Products/>
+                <Offer/>
+                <Feature/>
+                <Faq/>
+                <Contact/>
+                <Footer/>
+              </div>
+            }></Route>
+          
+            <Route path='/Newtyres' element={<Newtyres />}></Route>          
+            <Route path='/Rims' element={<Newrims/>}></Route>
+            <Route path='/Accessories' element={<Accessories/>}></Route>
+            <Route path='/Oil' element={<Oil/>}></Route>
 
-
-      </Routes>
-    </Router>
+        </Routes>
+        <Cart />
+      </Router>
+    </CartProvider>
   )
   
 }

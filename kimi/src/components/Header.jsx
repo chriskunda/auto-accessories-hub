@@ -1,9 +1,25 @@
+import { useState } from 'react'
 import './Header.css'
 import { BsCart3 } from 'react-icons/bs'
+import Cart from '../pages/Cart'
 
 import { Navigate, useNavigate } from 'react-router-dom'
 
 const Nav = () => {
+
+    const [cartOpen, setCartOpen] = useState(false);
+
+
+    const handleOpenCart = () => {
+        setCartOpen(true);
+    };
+
+    const handleCloseCart = () => {
+        setCartOpen(false);
+    };
+
+
+
     return(
         <nav>
             <div className='nav-bar'>
@@ -18,11 +34,14 @@ const Nav = () => {
                 </div>
                 <div className='AddtoCart'>
 
-                        <BsCart3 className='cart-icon' />
-                        <span className='cart-span'>0</span>
-
+                    <BsCart3 className='cart-icon' onClick={handleOpenCart}/>
+                    <span className='cart-span'>0</span>
                 </div>
             </div>
+            
+            {/* Informing Cart component to open panel */}
+            <Cart opened={cartOpen} closed={handleCloseCart}/>
+
         </nav>
     )
 }
