@@ -94,7 +94,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>Accessories</h1>
                             <p>Key accessories for car maintenance</p>
-                            <button className='card-description-button'>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Accessories')}>View items</button>
                         </div>
                     </div>
 

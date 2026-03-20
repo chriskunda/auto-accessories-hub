@@ -13,6 +13,7 @@ import Footer from './components/Footer'
 // Pages
 import Newtyres from './pages/Newtyres'
 import Newrims from './pages/Newrims'
+import Accessories from './pages/Accessories'
 
 
 import './App.css'
@@ -40,6 +41,8 @@ function App() {
         
         <Route path='/Newtyres' element={<Newtyres />}></Route>          
         <Route path='/Rims' element={<Newrims/>}></Route>
+        <Route path='/Accessories' element={<Accessories/>}></Route>
+
 
       </Routes>
     </Router>
