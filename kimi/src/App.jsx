@@ -14,6 +14,7 @@ import Footer from './components/Footer'
 import Newtyres from './pages/Newtyres'
 import Newrims from './pages/Newrims'
 import Accessories from './pages/Accessories'
+import Oil from './pages/Oil'
 
 
 import './App.css'
@@ -42,6 +43,7 @@ function App() {
         <Route path='/Newtyres' element={<Newtyres />}></Route>          
         <Route path='/Rims' element={<Newrims/>}></Route>
         <Route path='/Accessories' element={<Accessories/>}></Route>
+        <Route path='/Oil' element={<Oil/>}></Route>
 
 
       </Routes>

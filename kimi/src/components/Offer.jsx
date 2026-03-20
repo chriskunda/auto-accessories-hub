@@ -9,6 +9,7 @@ import Rims from '../assets/newrims.webp'
 import Accessories from '../assets/accessories.jpg'
 
 import { useNavigate } from 'react-router-dom'
+import Contact from './Contact'
 
 const Offer = () => {
 
@@ -71,7 +72,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>Wheel allignment</h1>
                             <p>Wheel alignment for better handling and tyre life</p>
-                            <button className='card-description-button'>Book an appointment</button>
+                            <button className='card-description-button' onClick={() => document.getElementById('call').scrollIntoView({behavior: 'smooth'})}>Book an appointment</button>
                         </div>
                     </div>
 
@@ -83,7 +84,7 @@ const Offer = () => {
                         <div className='card-description'>
                             <h1>Oil change</h1>
                             <p>Fresh oil. Better performance. Longer engine life.</p>
-                            <button className='card-description-button'>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Oil')}>View items</button>
                         </div>
                     </div>
 

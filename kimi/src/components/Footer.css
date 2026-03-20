@@ -90,6 +90,7 @@
     font-size: 13px;
     font-weight: 400;
     transition: color 0.2s;
+    cursor: pointer;
 }
 
 .link > a:hover {
@@ -98,6 +99,7 @@
 
 .open {
     margin-left: 10px;
+    cursor: pointer;
 }
 
 /* ── SOCIAL ICONS ── */

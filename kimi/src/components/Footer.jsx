@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom"
 import Pic from "../assets/accez.png"
 
 import './Footer.css'
 
 const Footer = () => {
+
+    const navigate = useNavigate();
+
     return(
         <div className='parent-footer'>
             <div className='sub-parent-footer'>
@@ -18,11 +22,11 @@ const Footer = () => {
                     </div>
                     <div className='link'>
                         <h2>Our services</h2>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Used Tyres</a></i>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">New Tyres</a></i>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">New Rims</a></i>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Oil change</a></i>
-                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="">Wheel allignment</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" href="#call">Used Tyres</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" onClick={() => navigate('/Newtyres')}>New Tyres</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" onClick={() => navigate('/Rims')}>New Rims</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" onClick={() => navigate('/Oil')}>Oil change</a></i>
+                        <i className="fa-solid fa-screwdriver-wrench"><a className="open" onClick={() => navigate('/Accessories')}>Car Accessories</a></i>
                     </div>
                     <div className='link'>
                         <h2>Legal</h2>
