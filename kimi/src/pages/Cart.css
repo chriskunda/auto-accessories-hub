@@ -17,12 +17,24 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+
+    /* To make cart slide smoothly */
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
 }
 
 
 .cart-container.isOpen {
     opacity: 1;
     z-index: 1;
+
+    /* To make cart slide smoothly */
+    transition: opacity 0.4s ease;
+}
+
+/* To make cart slide smoothly */
+.cart-container.isOpen .main-cart {
+    transform: translateX(0);
 }
 
 .cart-header{
@@ -32,6 +44,16 @@
     justify-content: space-between;
     height: 10%;
     background-color: yellow;
+}
+
+.cart-header>h1{
+    margin-left: 25px;
+}
+
+.cart-header>i{
+    font-size: 50px;
+    margin-right: 25px;
+    cursor: pointer;
 }
 
 .cart-items{

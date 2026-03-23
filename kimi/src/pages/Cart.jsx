@@ -14,7 +14,7 @@ const Cart = ({ opened, closed }) => {
       <div className='main-cart' onClick={(e) => e.stopPropagation()}>
         <div className='cart-header'>
           <h1>YOUR CART</h1>
-          <p>CLOSED</p>
+          <i class="fa-solid fa-xmark" onClick={closed}></i>
         </div>
         <div className='cart-items'>
           <p>Your Cart is empty.</p>
