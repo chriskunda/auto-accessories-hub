@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.nav-bar-main{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    background: rgba(248, 246, 244, 0.97);
+    top: 0;
+}
+
+.burger-icon-main{
+    display: none;
+}
+
+.links-main{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+}
+
+.links-main>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #404040;
+    position: relative; /* Crucial: allows the line to position itself relative to the text */
+    color: #333; /* Your text color */
+    padding-bottom: 2px; /* Creates space between the text and the line */
+}
+
+.links-main>a:hover{
+    color: #8B3A2A;
+}
+
+.links-main>a::after{
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    width: 100%;
+    height: 3px; /* Thickness of your line */
+    bottom: 0;
+    left: 0;
+    background-color: #8B3A2A; /* Color of the underline */
+    
+    /* Hide the line initially by scaling its width to 0 */
+    transform: scaleX(0); 
+    transform-origin: bottom right; /* Controls where the line shrinks to */
+    transition: transform 0.4s ease-out; /* The smooth animation speed */
+}
+
+.links-main>a:hover::after{
+    color: #8B3A2A;
+    transform: scaleX(1); /* Expands the line to full width */
+    transform-origin: bottom left; /* Makes the line grow from left to right */
+}
+

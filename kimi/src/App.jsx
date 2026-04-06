@@ -2,7 +2,7 @@
 import ScrollToTop from './components/ScrollTotop'
 
 // Components
-import Nav from './components/Header'
+import Mainnav from './components/Mainheader'
 import Products from './components/Product'
 import Offer from './components/Offer'
 import Feature from './components/Features'
@@ -33,7 +33,7 @@ function App() {
             <Route 
             path='/' element={
               <div className='parent-container'>
-                <Nav/>
+                <Mainnav/>
                 <Products/>
                 <Offer/>
                 <Feature/>

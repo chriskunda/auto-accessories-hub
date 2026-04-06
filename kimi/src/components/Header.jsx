@@ -3,7 +3,6 @@ import './Header.css'
 import { BsCart3 } from 'react-icons/bs'
 import Cart from '../pages/Cart'
 
-import { Navigate, useNavigate } from 'react-router-dom'
 
 const Nav = () => {
 
