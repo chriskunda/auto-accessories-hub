@@ -4,11 +4,9 @@ import Nav from '../components/Header'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
-import { CartContext } from "./CartContext";
-
 const Newtyres = () => {
 
-    const [tyres, setTyres] = useState([
+    const [tyres] = useState([
         {id:1, name: "MG Stone", size: "185/70/14", quantity: 18, price: "80,000"},
         {id:2, name: "Road Stone", size: "215/60/16", quantity: 10, price: "100,000"},
         {id:3, name: "Road Stone", size: "215/60/16", quantity: 10, price: "100,000"}
@@ -48,7 +46,7 @@ const Newtyres = () => {
                                 <span className="tyre-spec-tag">Qty: {tyre.quantity}</span>
                             </div>
                             <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart" onClick={() => addToCart(tyre)}>Add to Cart</button>
+                                <button className="tyre-btn-cart" >Add to Cart</button>
                                 <button className="tyre-btn-wish">♡</button>
                             </div>
                         </div>

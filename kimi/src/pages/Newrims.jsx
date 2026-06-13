@@ -4,12 +4,10 @@ import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-import { useCart } from './CartContext';
-
 
 const Newrims = () => {
     
-    const [rims, setRims] = useState([
+    const [rims] = useState([
         {id:1, name: "Grey", price: "1,200,000", size: "18\"", quantity:"One set"},
         {id:1, name: "Silver", price: "1,200,000", size: "18\"", quantity:"Two sets"},
         {id:1, name: "Golden", price: "1,500,000", size: "19\"", quantity:"One set"}

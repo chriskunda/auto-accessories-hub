@@ -17,8 +17,6 @@ import Accessories from './pages/Accessories'
 import Oil from './pages/Oil'
 import Cart from './pages/Cart'
 
-import { CartProvider } from './pages/CartContext' /*i imported this to wrap every components that will need cart*/
-
 import './App.css'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -26,7 +24,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    <CartProvider>
+    
       <Router>
         <ScrollToTop />
         <Routes>
@@ -51,7 +49,7 @@ function App() {
         </Routes>
         <Cart />
       </Router>
-    </CartProvider>
+    
   )
   
 }
