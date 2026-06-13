@@ -1,5 +1,5 @@
+import {useState} from 'react';
 import './Newrims.css'
-
 import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -8,8 +8,13 @@ import { useCart } from './CartContext';
 
 
 const Newrims = () => {
-
-    const {addToCart} = useCart();
+    
+    const [rims, setRims] = useState([
+        {id:1, name: "Grey", price: "1,200,000", size: "18\"", quantity:"One set"},
+        {id:1, name: "Silver", price: "1,200,000", size: "18\"", quantity:"Two sets"},
+        {id:1, name: "Golden", price: "1,500,000", size: "19\"", quantity:"One set"}
+    ])
+    
 
 
 
@@ -33,31 +38,29 @@ const Newrims = () => {
             <div className="sub-rims-parent">
 
                 <div className="rims-cards">
-
+                    {rims.map(rim =>(
                     <div className="card2">
                         <div className="rims-cards-img">
                             <img src="" alt="" className="rim-img" />
                         </div>
                         <div className="rim-carrd-descri">
                             <div className="card-top-row">
-                                <h2 className="card-name">Grey</h2>
-                                <span className="card-price">1,200,000 <small>RWF</small></span>
+                                <h2 className="card-name">{rim.name}</h2>
+                                <span className="card-price">{rim.price} <small>RWF</small></span>
                             </div>
                             <div className="card-specs">
-                                <span className="spec-tag">Size: 19"</span>
-                                <span className="spec-tag">One set</span>
+                                <span className="spec-tag">Size: {rim.size}</span>
+                                <span className="spec-tag">{rim.quantity}</span>
                             </div>
                             <div className="card-actions">
-                                <button 
-                                    className="btn-cart"
-                                    onClick={() => addToCart({name: "Gretgtgtgy", price: 1200000000000})}
-                                >
+                                <button className="btn-cart">
                                     Add to Cart</button>
                                 <button className="btn-wish">♡</button>
                             </div>
                         </div>
                     </div>
-
+                    ))}
+{/* {}
                     <div className="card2">
                         <div className="rims-cards-img">
                             <img src="" alt="" className="rim-img" />
@@ -157,6 +160,7 @@ const Newrims = () => {
                             </div>
                         </div>
                     </div>
+                    {} */}
 
                 </div>
 

@@ -15,13 +15,13 @@ export const CartProvider = ({ children }) => {
 
     // 5. This function runs when someone clicks "Add to Cart"
     //    It receives the rim product as "item"
-    const addToCart = (item) => {
+    export const addToCart = (item) => {
         setCartItems((prev) => [...prev, item]);
         //  ↑ "prev" = the old cart. We copy it with [...prev] and ADD the new item at the end
     };
 
     // 6. This function removes one item by its index position
-    const removeFromCart = (indexToRemove) => {
+    export const removeFromCart = (indexToRemove) => {
         setCartItems((prev) => prev.filter((_, i) => i !== indexToRemove));
         //  ↑ filter keeps everything EXCEPT the item at the given index
     };

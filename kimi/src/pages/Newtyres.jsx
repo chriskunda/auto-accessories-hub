@@ -4,10 +4,14 @@ import Nav from '../components/Header'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
+import { CartContext } from "./CartContext";
+
 const Newtyres = () => {
 
     const [tyres, setTyres] = useState([
-        {id:1, name: "MG Stone", size: 185/70/14, quantity: 18, price: 80000}
+        {id:1, name: "MG Stone", size: "185/70/14", quantity: 18, price: "80,000"},
+        {id:2, name: "Road Stone", size: "215/60/16", quantity: 10, price: "100,000"},
+        {id:3, name: "Road Stone", size: "215/60/16", quantity: 10, price: "100,000"}
     ])
     return (
         <div className="tyres-parent">
@@ -44,112 +48,12 @@ const Newtyres = () => {
                                 <span className="tyre-spec-tag">Qty: {tyre.quantity}</span>
                             </div>
                             <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart">Add to Cart</button>
+                                <button className="tyre-btn-cart" onClick={() => addToCart(tyre)}>Add to Cart</button>
                                 <button className="tyre-btn-wish">♡</button>
                             </div>
                         </div>
                     </div>
                         ))}
-{/*                         
-                    <div className="tyre-card">
-                        <div className="tyres-cards-img">
-                            <img src="" alt="" className="tyre-img" />
-                        </div>
-                        <div className="tyre-carrd-descri">
-                            <div className="tyre-card-top-row">
-                                <h2 className="tyre-card-name">Dunlop</h2>
-                                <span className="tyre-card-price">120,000 <small>RWF</small></span>
-                            </div>
-                            <div className="tyre-card-specs">
-                                <span className="tyre-spec-tag">Size: 275/50/19</span>
-                                <span className="tyre-spec-tag">Qty: 8</span>
-                            </div>
-                            <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart">Add to Cart</button>
-                                <button className="tyre-btn-wish">♡</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="tyre-card">
-                        <div className="tyres-cards-img">
-                            <img src="" alt="" className="tyre-img" />
-                        </div>
-                        <div className="tyre-carrd-descri">
-                            <div className="tyre-card-top-row">
-                                <h2 className="tyre-card-name">Bridgestone</h2>
-                                <span className="tyre-card-price">120,000 <small>RWF</small></span>
-                            </div>
-                            <div className="tyre-card-specs">
-                                <span className="tyre-spec-tag">Size: 275/50/19</span>
-                                <span className="tyre-spec-tag">Qty: 8</span>
-                            </div>
-                            <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart">Add to Cart</button>
-                                <button className="tyre-btn-wish">♡</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="tyre-card">
-                        <div className="tyres-cards-img">
-                            <img src="" alt="" className="tyre-img" />
-                        </div>
-                        <div className="tyre-carrd-descri">
-                            <div className="tyre-card-top-row">
-                                <h2 className="tyre-card-name">Road Stone</h2>
-                                <span className="tyre-card-price">120,000 <small>RWF</small></span>
-                            </div>
-                            <div className="tyre-card-specs">
-                                <span className="tyre-spec-tag">Size: 275/50/19</span>
-                                <span className="tyre-spec-tag">Qty: 8</span>
-                            </div>
-                            <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart">Add to Cart</button>
-                                <button className="tyre-btn-wish">♡</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="tyre-card">
-                        <div className="tyres-cards-img">
-                            <img src="" alt="" className="tyre-img" />
-                        </div>
-                        <div className="tyre-carrd-descri">
-                            <div className="tyre-card-top-row">
-                                <h2 className="tyre-card-name">Yokohama</h2>
-                                <span className="tyre-card-price">120,000 <small>RWF</small></span>
-                            </div>
-                            <div className="tyre-card-specs">
-                                <span className="tyre-spec-tag">Size: 275/50/19</span>
-                                <span className="tyre-spec-tag">Qty: 8</span>
-                            </div>
-                            <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart">Add to Cart</button>
-                                <button className="tyre-btn-wish">♡</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="tyre-card">
-                        <div className="tyres-cards-img">
-                            <img src="" alt="" className="tyre-img" />
-                        </div>
-                        <div className="tyre-carrd-descri">
-                            <div className="tyre-card-top-row">
-                                <h2 className="tyre-card-name">Chao Yang</h2>
-                                <span className="tyre-card-price">120,000 <small>RWF</small></span>
-                            </div>
-                            <div className="tyre-card-specs">
-                                <span className="tyre-spec-tag">Size: 275/50/19</span>
-                                <span className="tyre-spec-tag">Qty: 8</span>
-                            </div>
-                            <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart">Add to Cart</button>
-                                <button className="tyre-btn-wish">♡</button>
-                            </div>
-                        </div>
-                    </div> */}
 
                 </div>
 
