@@ -28,6 +28,17 @@ const Newtyres = () => {
             </div>
 
             <div className="sub-tyres-parent">
+                <div className="filters">
+                    <p className="filter-btn">All</p>
+                    <p className="filter-btn">14"</p>
+                    <p className="filter-btn">15"</p>
+                    <p className="filter-btn">16"</p>
+                    <p className="filter-btn">17"</p>
+                    <p className="filter-btn">18"</p>
+                    <p className="filter-btn">19"</p>
+                    <p className="filter-btn">20"</p>
+                    <p className="filter-btn">21"</p>
+                </div>
 
                 <div className="tyres-cards">
 
