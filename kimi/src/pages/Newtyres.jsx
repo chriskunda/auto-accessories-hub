@@ -1,4 +1,4 @@
-import { useState } from 'react'    
+import { useState } from 'react' 
 import './Newtyres.css'
 import Nav from '../components/Header'
 import Contact from '../components/Contact'
