@@ -1,5 +1,5 @@
 // Scroll to top
-import ScrollToTop from './components/ScrollTotop'
+import ScrollToTop from './components/ScrollToTop'
 
 // Components
 import Mainnav from './components/Mainheader'
