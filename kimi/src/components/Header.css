@@ -3,7 +3,7 @@
 nav{
     width: 100%;
     text-transform: uppercase;
-
+    
 }
 
 .nav-bar{
@@ -15,7 +15,6 @@ nav{
     align-items: center;
     border-bottom: 1px solid var(--border);
     background: rgba(248, 246, 244, 0.97);
-    top: 0;
 }
 
 .burger-icon{
