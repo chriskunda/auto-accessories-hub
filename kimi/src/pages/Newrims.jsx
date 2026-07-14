@@ -26,6 +26,7 @@ const Newrims = () => {
             <div className="sub-rims-parent">
 
                 <div className="rims-cards">
+                    
                     {rims.map(rim =>(
                     <div className="card2">
                         <div className="rims-cards-img">
