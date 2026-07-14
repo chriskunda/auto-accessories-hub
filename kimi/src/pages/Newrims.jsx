@@ -8,7 +8,6 @@ import {rims} from '../objects/rims'
 const Newrims = () => {
     
     
-    
 
 
 
