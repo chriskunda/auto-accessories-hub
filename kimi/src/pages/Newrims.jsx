@@ -1,4 +1,3 @@
-
 import './Newrims.css'
 import Nav from '../components/Header';
 import Contact from '../components/Contact';
