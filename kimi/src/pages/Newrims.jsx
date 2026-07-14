@@ -7,10 +7,6 @@ import {rims} from '../objects/rims'
 
 const Newrims = () => {
     
-    
-
-
-
     return (
         <div className="rims-parent">
             <Nav/>
