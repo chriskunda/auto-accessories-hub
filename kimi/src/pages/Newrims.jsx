@@ -3,7 +3,7 @@ import './Newrims.css'
 import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-
+import {rims} from '../objects/rims'
 
 const Newrims = () => {
     
