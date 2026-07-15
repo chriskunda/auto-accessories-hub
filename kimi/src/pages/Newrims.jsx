@@ -28,7 +28,7 @@ const Newrims = () => {
                 <div className="rims-cards">
                     
                     {rims.map(rim =>(
-                    <div className="card2">
+                    <div className="card2" key={note.id}>
                         <div className="rims-cards-img">
                             <img src="" alt="" className="rim-img" />
                         </div>
