@@ -29,8 +29,7 @@ const Newrims = () => {
                 <div className="rims-cards">
                     
                     {rims.map(rim =>(
-                    
-                        <Card key={rim.id} rim={rim} />
+                                            <Card key={rim.id} rim={rim} />
 
                     ))}
 
