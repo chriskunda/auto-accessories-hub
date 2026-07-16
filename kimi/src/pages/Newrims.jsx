@@ -3,9 +3,9 @@ import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import {rims} from '../objects/rims'
-import Card from "./card"
+import Card from '../components/Card'
 
-const Newrims = ({ rims = [] }) => {
+const Newrims = () => {
     
     return (
         <div className="rims-parent">
@@ -29,26 +29,29 @@ const Newrims = ({ rims = [] }) => {
                 <div className="rims-cards">
                     
                     {rims.map(rim =>(
-                    <div className="card2" key={rim.id}>
-                        <div className="rims-cards-img">
-                            <img src={rim.image} alt="" className="rim-img" />
-                        </div>
-                        <div className="rim-carrd-descri">
-                            <div className="card-top-row">
-                                <h2 className="card-name">{rim.name}</h2>
-                                <span className="card-price">{rim.price} <small>RWF</small></span>
-                            </div>
-                            <div className="card-specs">
-                                <span className="spec-tag">Size: {rim.size}</span>
-                                <span className="spec-tag">{rim.quantity}</span>
-                            </div>
-                            <div className="card-actions">
-                                <button className="btn-cart">
-                                    Add to Cart</button>
-                                <button className="btn-wish">♡</button>
-                            </div>
-                        </div>
-                    </div>
+                    // <div className="card2" key={rim.id}>
+                    //     <div className="rims-cards-img">
+                    //         <img src={rim.image} alt="" className="rim-img" />
+                    //     </div>
+                    //     <div className="rim-carrd-descri">
+                    //         <div className="card-top-row">
+                    //             <h2 className="card-name">{rim.name}</h2>
+                    //             <span className="card-price">{rim.price} <small>RWF</small></span>
+                    //         </div>
+                    //         <div className="card-specs">
+                    //             <span className="spec-tag">Size: {rim.size}</span>
+                    //             <span className="spec-tag">{rim.quantity}</span>
+                    //         </div>
+                    //         <div className="card-actions">
+                    //             <button className="btn-cart">
+                    //                 Add to Cart</button>
+                    //             <button className="btn-wish">♡</button>
+                    //         </div>
+                    //     </div>
+                    // </div>
+
+                        <Card key={rim.id || `${rim.name}-${index}`} rim={rim} />
+
                     ))}
 
                 </div>
