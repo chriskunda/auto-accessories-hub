@@ -3,6 +3,7 @@ import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import {rims} from '../objects/rims'
+import Card from "./card"
 
 const Newrims = ({ rims = [] }) => {
     
