@@ -4,7 +4,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import {rims} from '../objects/rims'
 
-const Newrims = () => {
+const Newrims = ({ rims = [] }) => {
     
     return (
         <div className="rims-parent">
