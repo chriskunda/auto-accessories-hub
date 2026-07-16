@@ -6,6 +6,8 @@ import {rims} from '../objects/rims'
 import Card from '../components/Card'
 
 const Newrims = () => {
+
+    const [show, setShow] = useState(true);
     
     return (
         <div className="rims-parent">
