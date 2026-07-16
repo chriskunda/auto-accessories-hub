@@ -9,7 +9,11 @@ import { useState } from 'react';
 
 const Newrims = () => {
 
-    const [show, setShow] = useState(true);
+    // const [cards, setCards] = useState(rims);
+    // const [show, setShow] = useState(true);
+
+    // const cardsToShow = showAll
+    // ? cards
     
     return (
         <div className="rims-parent">
@@ -28,13 +32,13 @@ const Newrims = () => {
                 </p>
             </div>
 
-            <div className="sub-rims-parent">
+             <div className="sub-rims-parent">
                 <div className='filters'>
                     <p>All</p>
                     <p>18"</p>
                     <p>19"</p>
                 </div>
-                <div className="rims-cards">
+                <div className="rims-cards"> 
                     
                     {rims.map(rim =>(
                         <Card key={rim.id} rim={rim} />
