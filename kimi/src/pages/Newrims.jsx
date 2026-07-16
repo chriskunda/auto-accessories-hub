@@ -28,9 +28,9 @@ const Newrims = () => {
 
                 <div className="rims-cards">
                     
-                    {rims.map((rim, index) =>(
+                    {rims.map(rim =>(
                     
-                        <Card key={rim.id || `${rim.name}-${index}`} rim={rim} />
+                        <Card key={rim.id} rim={rim} />
 
                     ))}
 
