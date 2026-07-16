@@ -350,13 +350,3 @@
   transform: translateY(0);
   opacity: 1;
 }
-
-/* ── RESPONSIVE ── */
-@media (max-width: 960px) {
-  .rims-cards { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 580px) {
-  .rims-cards { grid-template-columns: 1fr; }
-  .rims-filters-bar { flex-direction: column; gap: 12px; align-items: flex-start; }
-}

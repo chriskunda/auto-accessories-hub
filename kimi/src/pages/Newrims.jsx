@@ -29,7 +29,11 @@ const Newrims = () => {
             </div>
 
             <div className="sub-rims-parent">
-
+                <div className='filters'>
+                    <p>All</p>
+                    <p>18"</p>
+                    <p>19"</p>
+                </div>
                 <div className="rims-cards">
                     
                     {rims.map(rim =>(
