@@ -127,9 +127,14 @@
   margin-bottom: 8px;
 }
 
-.rims-filters {
+.filters {
   display: flex;
+  align-items: center;
   gap: 8px;
+
+    p{
+      background-color: var(--accent);
+    }
 }
 
 .rims-filter-btn {
