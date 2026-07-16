@@ -5,6 +5,8 @@ import Footer from '../components/Footer';
 import {rims} from '../objects/rims'
 import Card from '../components/Card'
 
+import { useState } from 'react';
+
 const Newrims = () => {
 
     const [show, setShow] = useState(true);
