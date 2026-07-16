@@ -131,6 +131,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  height: 60px;
 
     p{
       background-color: var(--accent);
