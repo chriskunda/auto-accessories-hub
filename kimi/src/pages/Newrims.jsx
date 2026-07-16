@@ -29,27 +29,7 @@ const Newrims = () => {
                 <div className="rims-cards">
                     
                     {rims.map((rim, index) =>(
-                    // <div className="card2" key={rim.id}>
-                    //     <div className="rims-cards-img">
-                    //         <img src={rim.image} alt="" className="rim-img" />
-                    //     </div>
-                    //     <div className="rim-carrd-descri">
-                    //         <div className="card-top-row">
-                    //             <h2 className="card-name">{rim.name}</h2>
-                    //             <span className="card-price">{rim.price} <small>RWF</small></span>
-                    //         </div>
-                    //         <div className="card-specs">
-                    //             <span className="spec-tag">Size: {rim.size}</span>
-                    //             <span className="spec-tag">{rim.quantity}</span>
-                    //         </div>
-                    //         <div className="card-actions">
-                    //             <button className="btn-cart">
-                    //                 Add to Cart</button>
-                    //             <button className="btn-wish">♡</button>
-                    //         </div>
-                    //     </div>
-                    // </div>
-
+                    
                         <Card key={rim.id || `${rim.name}-${index}`} rim={rim} />
 
                     ))}
