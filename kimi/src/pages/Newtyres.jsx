@@ -3,14 +3,29 @@ import './Newtyres.css'
 import Nav from '../components/Header'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import { useCart } from '../context/CartContext'
 
 const Newtyres = () => {
+    const { addToCart } = useCart();
 
     const [tyres] = useState([
         {id:1, name: "MG Stone", size: "185/70/14", quantity: 18, price: "80,000"},
         {id:2, name: "Road Stone", size: "215/60/16", quantity: 10, price: "100,000"},
         {id:3, name: "Road Stone", size: "215/60/16", quantity: 10, price: "100,000"}
     ])
+
+    const handleAddToCart = (tyre) => {
+        const cartItem = {
+            id: tyre.id,
+            name: tyre.name,
+            price: parseFloat(tyre.price.replace(/,/g, '')),
+            size: tyre.size,
+            quantity: tyre.quantity,
+            image: '',
+        };
+        addToCart(cartItem);
+        alert(`${tyre.name} added to cart!`);
+    }
     return (
         <div className="tyres-parent">
             <Nav/>
@@ -57,7 +72,7 @@ const Newtyres = () => {
                                 <span className="tyre-spec-tag">Qty: {tyre.quantity}</span>
                             </div>
                             <div className="tyre-card-actions">
-                                <button className="tyre-btn-cart" >Add to Cart</button>
+                                <button className="tyre-btn-cart" onClick={() => handleAddToCart(tyre)}>Add to Cart</button>
                                 <button className="tyre-btn-wish">♡</button>
                             </div>
                         </div>

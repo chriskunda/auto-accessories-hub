@@ -3,13 +3,29 @@ import './Accessories.css'
 import Nav from '../components/Header'
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { useCart } from '../context/CartContext'
 
 const Accessories = () => {
+    const { addToCart } = useCart();
+
     const [accessories] = useState([
         {id:1, name: "Plas Chamois", price: "5,000", work: "Cleaning", quantity:"One set"},
-        {id:1, name: "Coolant", price: "6,000", work: "Engine Care", quantity:"Two sets"},
-        {id:1, name: "Car Perfume", price: "5,000", work: "Detailing", quantity:"One set"}
+        {id:2, name: "Coolant", price: "6,000", work: "Engine Care", quantity:"Two sets"},
+        {id:3, name: "Car Perfume", price: "5,000", work: "Detailing", quantity:"One set"}
     ])
+
+    const handleAddToCart = (accessory) => {
+        const cartItem = {
+            id: accessory.id,
+            name: accessory.name,
+            price: parseFloat(accessory.price.replace(/,/g, '')),
+            work: accessory.work,
+            quantity: accessory.quantity,
+            image: '',
+        };
+        addToCart(cartItem);
+        alert(`${accessory.name} added to cart!`);
+    }
 
     return (
         <div className='Accessories-parent'>
@@ -43,7 +59,7 @@ const Accessories = () => {
                                 <span className="accessory-spec-tag">{accessory.work}</span>
                             </div>
                             <div className="accessory-card-actions">
-                                <button className="accessory-btn-cart">Add to Cart</button>
+                                <button className="accessory-btn-cart" onClick={() => handleAddToCart(accessory)}>Add to Cart</button>
                                 <button className="accessory-btn-wish">♡</button>
                             </div>
                         </div>

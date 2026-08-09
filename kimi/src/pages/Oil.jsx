@@ -3,14 +3,29 @@ import './Oil.css'
 import Nav from '../components/Header';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { useCart } from '../context/CartContext'
 
 const Oil = () => {
+    const { addToCart } = useCart();
 
     const [oils] = useState([
             {id:1, name: "Rymax", price: "8,000", work: "Engine oil", quantity:"One set"},
-            {id:1, name: "Kixx Diesel", price: "12,000", work: "Engine oil", quantity:"Two sets"},
-            {id:1, name: "Kixx Essence", price: "15,000", work: "Engine oil", quantity:"One set"}
+            {id:2, name: "Kixx Diesel", price: "12,000", work: "Engine oil", quantity:"Two sets"},
+            {id:3, name: "Kixx Essence", price: "15,000", work: "Engine oil", quantity:"One set"}
         ])
+
+    const handleAddToCart = (oil) => {
+        const cartItem = {
+            id: oil.id,
+            name: oil.name,
+            price: parseFloat(oil.price.replace(/,/g, '')),
+            work: oil.work,
+            quantity: oil.quantity,
+            image: '',
+        };
+        addToCart(cartItem);
+        alert(`${oil.name} added to cart!`);
+    }
 
     return (
         <div className='oil-parent'>
@@ -45,7 +60,7 @@ const Oil = () => {
                                 <span className="oil-spec-tag">{oil.work}</span>
                             </div>
                             <div className="oil-card-actions">
-                                <button className="oil-btn-cart">Add to Cart</button>
+                                <button className="oil-btn-cart" onClick={() => handleAddToCart(oil)}>Add to Cart</button>
                                 <button className="oil-btn-wish">♡</button>
                             </div>
                         </div>
