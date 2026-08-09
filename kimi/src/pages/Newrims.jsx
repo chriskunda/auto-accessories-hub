@@ -9,12 +9,6 @@ import { useState } from 'react';
 
 const Newrims = () => {
 
-    // const [cards, setCards] = useState(rims);
-    // const [show, setShow] = useState(true);
-
-    // const cardsToShow = showAll
-    // ? cards
-    
     return (
         <div className="rims-parent">
             <Nav/>
