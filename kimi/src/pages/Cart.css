@@ -200,7 +200,7 @@
 }
 
 .cart-footer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #ffc9be;
     padding: 20px;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     display: flex;
