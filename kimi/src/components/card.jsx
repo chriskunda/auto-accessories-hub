@@ -1,5 +1,23 @@
+import { useCart } from '../context/CartContext'
+
 const Card = ({ rim }) => {
+    const { addToCart } = useCart();
+
     if (!rim) return null;
+
+    const handleAddToCart = () => {
+        // Create cart item from rim data
+        const cartItem = {
+            id: rim.id || Math.random(), // Fallback to random if no id
+            name: rim.name,
+            price: rim.price,
+            size: rim.size,
+            quantity: rim.quantity,
+            image: rim.image,
+        };
+        addToCart(cartItem);
+        alert(`${rim.name} added to cart!`);
+    };
 
     return (
         <div className="card2">
@@ -21,7 +39,7 @@ const Card = ({ rim }) => {
                 </div>
 
                 <div className="card-actions">
-                    <button className="btn-cart">Add to Cart</button>
+                    <button className="btn-cart" onClick={handleAddToCart}>Add to Cart</button>
                     <button className="btn-wish">♡</button>
                 </div>
             </div>

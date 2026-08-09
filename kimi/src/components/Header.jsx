@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCart } from '../context/CartContext'
 import './Header.css'
 import { BsCart3 } from 'react-icons/bs'
 import Cart from '../pages/Cart'
@@ -6,18 +6,7 @@ import Cart from '../pages/Cart'
 
 const Nav = () => {
 
-    const [cartOpen, setCartOpen] = useState(false);
-
-
-    const handleOpenCart = () => {
-        setCartOpen(true);
-    };
-
-    const handleCloseCart = () => {
-        setCartOpen(false);
-    };
-
-
+    const { cartOpen, openCart, closeCart, getCartCount } = useCart();
 
     return(
         <nav>
@@ -33,13 +22,13 @@ const Nav = () => {
                 </div>
                 <div className='AddtoCart'>
 
-                    <BsCart3 className='cart-icon' onClick={handleOpenCart}/>
-                    <span className='cart-span'>0</span>
+                    <BsCart3 className='cart-icon' onClick={openCart}/>
+                    <span className='cart-span'>{getCartCount()}</span>
                 </div>
             </div>
             
             {/* Informing Cart component to open panel */}
-            <Cart opened={cartOpen} closed={handleCloseCart}/>
+            <Cart opened={cartOpen} closed={closeCart}/>
 
         </nav>
     )

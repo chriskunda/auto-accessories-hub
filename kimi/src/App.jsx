@@ -17,6 +17,9 @@ import Accessories from './pages/Accessories'
 import Oil from './pages/Oil'
 import Cart from './pages/Cart'
 
+// Context
+import { CartProvider } from './context/CartContext'
+
 import './App.css'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -24,7 +27,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    
+    <CartProvider>
       <Router>
         <ScrollToTop />
         <Routes>
@@ -49,7 +52,7 @@ function App() {
         </Routes>
         <Cart />
       </Router>
-    
+    </CartProvider>
   )
   
 }
