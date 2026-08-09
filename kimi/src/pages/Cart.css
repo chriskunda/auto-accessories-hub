@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: space-between;
     height: 10%;
-    background-color: yellow;
+    background-color: #fcd4cd;
     padding: 0 25px;
 }
 
@@ -67,7 +67,7 @@
     flex-direction: column;
     justify-content: flex-start;
     height: 90%;
-    background-color: green;
+    background-color: #ffeeeb;
     overflow-y: auto;
     padding: 0;
 }
@@ -93,8 +93,8 @@
     gap: 15px;
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
+    background-color: #ffc9be;
+    color: grey;
 }
 
 .item-image {
@@ -219,7 +219,7 @@
 }
 
 .checkout-btn {
-    background-color: yellow;
+    background-color: #8B3A2A;
     border: none;
     color: black;
     padding: 12px 20px;
@@ -232,7 +232,7 @@
 }
 
 .checkout-btn:hover {
-    background-color: #ffeb3b;
+    background-color: #532218;
 }
 
 /* Mobile responsive */
