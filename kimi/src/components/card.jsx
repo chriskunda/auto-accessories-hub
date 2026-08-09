@@ -8,9 +8,9 @@ const Card = ({ rim }) => {
     const handleAddToCart = () => {
         // Create cart item from rim data
         const cartItem = {
-            id: rim.id || Math.random(), // Fallback to random if no id
+            id: `rim-${rim.id}` || Math.random(), // Fallback to random if no id
             name: rim.name,
-            price: rim.price,
+            price: parseFloat(rim.price.replace(/,/g, '')),
             size: rim.size,
             quantity: rim.quantity,
             image: rim.image,

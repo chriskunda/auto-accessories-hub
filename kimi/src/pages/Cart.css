@@ -137,6 +137,12 @@
     opacity: 0.8;
 }
 
+.item-work {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
 .item-quantity {
     display: flex;
     align-items: center;

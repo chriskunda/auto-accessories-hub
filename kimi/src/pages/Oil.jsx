@@ -16,7 +16,7 @@ const Oil = () => {
 
     const handleAddToCart = (oil) => {
         const cartItem = {
-            id: oil.id,
+            id: `oil-${oil.id}`,
             name: oil.name,
             price: parseFloat(oil.price.replace(/,/g, '')),
             work: oil.work,

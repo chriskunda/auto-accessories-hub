@@ -29,6 +29,7 @@ const Cart = ({ opened, closed }) => {
                       <h3>{item.name}</h3>
                       <p className='item-price'>{item.price} RWF</p>
                       {item.size && <p className='item-size'>Size: {item.size}</p>}
+                      {item.work && <p className='item-work'>Type: {item.work}</p>}
                     </div>
                     <div className='item-quantity'>
                       <button 

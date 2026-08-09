@@ -16,7 +16,7 @@ const Newtyres = () => {
 
     const handleAddToCart = (tyre) => {
         const cartItem = {
-            id: tyre.id,
+            id: `tyre-${tyre.id}`,
             name: tyre.name,
             price: parseFloat(tyre.price.replace(/,/g, '')),
             size: tyre.size,

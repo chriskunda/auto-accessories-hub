@@ -16,7 +16,7 @@ const Accessories = () => {
 
     const handleAddToCart = (accessory) => {
         const cartItem = {
-            id: accessory.id,
+            id: `accessory-${accessory.id}`,
             name: accessory.name,
             price: parseFloat(accessory.price.replace(/,/g, '')),
             work: accessory.work,
