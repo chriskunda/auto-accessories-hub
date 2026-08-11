@@ -1,16 +1,11 @@
 
-import {useRef} from 'react'
-import { useState } from 'react'
 import './Mainheader.css'
 
+const Mainnav = ({ serviceRef }) => {
 
-const Mainnav = () => {
-
-    const homeRef = useRef(null);
-    const serviceRef = useRef(null);
-    const contactRef = useRef(null);
-
-    const scrollTo = (ref) => {
+    const scrollTo = (ref, e) => {
+        if (!ref?.current) return;
+        e.preventDefault();
         ref.current.scrollIntoView({ behavior: 'smooth' });
     };
 
@@ -21,9 +16,9 @@ const Mainnav = () => {
                     <i className="fa-solid fa-bars burger-icon"></i>
                 </div>
                 <div className='links-main'>
-                    <a href="/" onClick={() => useRef(homeRef)}>Home</a>
+                    <a href="/">Home</a>
                     <a href="">About</a>
-                    <a href="" onClick={() => useRef(serviceRef)}>Services</a>
+                    <a href="" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
                     <a href="#call">Contact</a>
                 </div>
 

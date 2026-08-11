@@ -23,9 +23,12 @@ import { CartProvider } from './context/CartContext'
 
 import './App.css'
 
+import { useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const serviceRef = useRef(null);
+  
 
   return (
     <CartProvider>
@@ -35,9 +38,9 @@ function App() {
             <Route 
             path='/' element={
               <div className='parent-container'>
-                <Mainnav/>
+                <Mainnav serviceRef={serviceRef} />
                 <Products/>
-                <Offer/>
+                <Offer serviceRef={serviceRef} />
                 <Feature/>
                 <Faq/>
                 <Contact/>

@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 import './Offer.css'
 import New from '../assets/newtyres.webp'
 import Used from '../assets/usedtyres.jpg'
@@ -9,9 +7,8 @@ import Rims from '../assets/newrims.webp'
 import Accessories from '../assets/accessories.jpg'
 import { useNavigate } from 'react-router-dom'
 import Contact from './Contact'
-import {serviceRef} from "./Mainheader"
 
-const Offer = () => {
+const Offer = ({ serviceRef }) => {
 
     const navigate = useNavigate();
 
@@ -20,7 +17,7 @@ const Offer = () => {
 
     return(
 
-        <div className="parent-offer" id='services' >
+        <div className="parent-offer" id='services' ref={serviceRef}>
             <div className="offer-words">
                 <p>OUR SERVICES</p>
                 <h1 className='offer-words-h1'>What we Offer</h1>
