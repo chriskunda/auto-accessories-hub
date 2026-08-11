@@ -22,6 +22,9 @@ const Mainnav = ({ serviceRef, contactRef }) => {
                     <a href="" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
                     <a href="" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
                 </div>
+                <div className='icon'>
+                    <FontAwesomeIcon icon={faUser} />
+                </div>
 
             </div>
 
