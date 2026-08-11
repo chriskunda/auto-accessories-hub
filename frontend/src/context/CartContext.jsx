@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
 // Create the cart context
 const CartContext = createContext();
@@ -7,6 +7,30 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+  const [toastOpen, setToastOpen] = useState(false);
+  const toastTimeoutRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) {
+        clearTimeout(toastTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const showToast = (message) => {
+    if (!message) return;
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current);
+    }
+    setToastMessage(message);
+    setToastOpen(true);
+    toastTimeoutRef.current = setTimeout(() => {
+      setToastOpen(false);
+      toastTimeoutRef.current = null;
+    }, 2000);
+  };
 
   // Add item to cart
   const addToCart = (item) => {
@@ -80,6 +104,9 @@ export const CartProvider = ({ children }) => {
     getCartCount,
     openCart,
     closeCart,
+    toastMessage,
+    toastOpen,
+    showToast,
   };
 
   return (

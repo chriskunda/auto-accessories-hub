@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import { useCart } from '../context/CartContext'
 
 const Newtyres = () => {
-    const { addToCart } = useCart();
+    const { addToCart, showToast } = useCart();
 
     const [tyres] = useState([
         {id:1, name: "MG Stone", size: "185/70/14", quantity: 18, price: "80,000"},
@@ -24,7 +24,7 @@ const Newtyres = () => {
             image: '',
         };
         addToCart(cartItem);
-        alert(`${tyre.name} added to cart!`);
+        showToast(`${tyre.name} added to cart!`);
     }
     return (
         <div className="tyres-parent">

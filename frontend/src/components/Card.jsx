@@ -1,7 +1,7 @@
 import { useCart } from '../context/CartContext'
 
 const Card = ({ rim }) => {
-    const { addToCart } = useCart();
+    const { addToCart, showToast } = useCart();
 
     if (!rim) return null;
 
@@ -16,7 +16,7 @@ const Card = ({ rim }) => {
             image: rim.image,
         };
         addToCart(cartItem);
-        alert(`${rim.name} added to cart!`);
+        showToast(`${rim.name} added to cart!`);
     };
 
     return (

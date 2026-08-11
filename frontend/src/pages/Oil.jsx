@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext'
 
 const Oil = () => {
-    const { addToCart } = useCart();
+    const { addToCart, showToast } = useCart();
 
     const [oils] = useState([
             {id:1, name: "Rymax", price: "8,000", work: "Engine oil", quantity:"One set"},
@@ -24,7 +24,7 @@ const Oil = () => {
             image: '',
         };
         addToCart(cartItem);
-        alert(`${oil.name} added to cart!`);
+        showToast(`${oil.name} added to cart!`);
     }
 
     return (

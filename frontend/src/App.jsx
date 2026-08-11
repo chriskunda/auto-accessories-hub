@@ -16,6 +16,7 @@ import Newrims from './pages/Newrims'
 import Accessories from './pages/Accessories'
 import Oil from './pages/Oil'
 import Cart from './pages/Cart'
+import Toast from './components/Toast'
 
 // Context
 import { CartProvider } from './context/CartContext'
@@ -51,6 +52,7 @@ function App() {
 
         </Routes>
         <Cart />
+        <Toast />
       </Router>
     </CartProvider>
   )

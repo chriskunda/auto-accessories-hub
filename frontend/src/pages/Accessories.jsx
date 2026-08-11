@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext'
 
 const Accessories = () => {
-    const { addToCart } = useCart();
+    const { addToCart, showToast } = useCart();
 
     const [accessories] = useState([
         {id:1, name: "Plas Chamois", price: "5,000", work: "Cleaning", quantity:"One set"},
@@ -24,7 +24,7 @@ const Accessories = () => {
             image: '',
         };
         addToCart(cartItem);
-        alert(`${accessory.name} added to cart!`);
+        showToast(`${accessory.name} added to cart!`);
     }
 
     return (
