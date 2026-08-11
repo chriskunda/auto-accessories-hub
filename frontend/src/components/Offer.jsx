@@ -74,7 +74,7 @@ const Offer = ({ serviceRef, contactRef }) => {
                         <div className='card-description'>
                             <h1>Wheel allignment</h1>
                             <p>Wheel alignment for better handling and tyre life</p>
-                            <button className='card-description-button' onClick={() => document.getElementById('call').scrollIntoView({behavior: 'smooth'})}>Book an appointment</button>
+                            <button className='card-description-button' onClick={(e) => scrollTo(contactRef, e)}>Book an appointment</button>
                         </div>
                     </div>
 
