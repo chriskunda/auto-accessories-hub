@@ -12,7 +12,11 @@ const Offer = ({ serviceRef, cantactRef }) => {
 
     const navigate = useNavigate();
 
-  
+    const scrollTo = (ref, e) => {
+        if (!ref?.current) return;
+        e.preventDefault();
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
 
     return(
