@@ -51,7 +51,9 @@ const Offer = ({ serviceRef, contactRef }) => {
                         <div className='card-description'>
                             <h1>New tyres</h1>
                             <p>Quality new tyres you can trust.</p>
-                            <button className='card-description-button' onClick={() => navigate('/Newtyres')}>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Newtyres')}>
+                                View items
+                            </button>
                         </div>
                     </div>
 
@@ -63,7 +65,9 @@ const Offer = ({ serviceRef, contactRef }) => {
                         <div className='card-description'>
                             <h1>New Rims</h1>
                             <p>A global collection of rims in every size and style</p>
-                            <button className='card-description-button' onClick={() => navigate('/Rims')}>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Rims')}>
+                                View items
+                            </button>
                         </div>
                     </div>
 
@@ -74,7 +78,9 @@ const Offer = ({ serviceRef, contactRef }) => {
                         <div className='card-description'>
                             <h1>Wheel allignment</h1>
                             <p>Wheel alignment for better handling and tyre life</p>
-                            <button className='card-description-button' onClick={(e) => scrollTo(contactRef, e)}>Book an appointment</button>
+                            <button className='card-description-button' onClick={(e) => scrollTo(contactRef, e)}>
+                                Book an appointment
+                            </button>
                         </div>
                     </div>
 
@@ -86,7 +92,9 @@ const Offer = ({ serviceRef, contactRef }) => {
                         <div className='card-description'>
                             <h1>Oil change</h1>
                             <p>Fresh oil. Better performance. Longer engine life.</p>
-                            <button className='card-description-button' onClick={() => navigate('/Oil')}>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Oil')}>
+                                View items
+                            </button>
                         </div>
                     </div>
 
@@ -97,7 +105,9 @@ const Offer = ({ serviceRef, contactRef }) => {
                         <div className='card-description'>
                             <h1>Accessories</h1>
                             <p>Key accessories for car maintenance</p>
-                            <button className='card-description-button' onClick={() => navigate('/Accessories')}>View items</button>
+                            <button className='card-description-button' onClick={() => navigate('/Accessories')}>
+                                View items
+                            </button>
                         </div>
                     </div>
 
