@@ -20,7 +20,7 @@ const Offer = ({ serviceRef, contactRef }) => {
 
     return(
 
-        <div className="parent-offer" id='services' ref={serviceRef}>
+        <div className="parent-offer" ref={serviceRef}>
             <div className="offer-words">
                 <p>OUR SERVICES</p>
                 <h1 className='offer-words-h1'>What we Offer</h1>
