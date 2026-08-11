@@ -38,12 +38,12 @@ function App() {
             <Route 
             path='/' element={
               <div className='parent-container'>
-                <Mainnav serviceRef={serviceRef} />
+                <Mainnav serviceRef={serviceRef} contactRef={contactRef}/>
                 <Products/>
                 <Offer serviceRef={serviceRef} />
                 <Feature/>
                 <Faq/>
-                <Contact/>
+                <Contact contactRef={contactRef}/>
                 <Footer/>
               </div>
             }></Route>
