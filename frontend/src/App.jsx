@@ -52,6 +52,8 @@ function App() {
             <Route path='/Rims' element={<Newrims/>}></Route>
             <Route path='/Accessories' element={<Accessories/>}></Route>
             <Route path='/Oil' element={<Oil/>}></Route>
+            
+            <Route path='' element={}></Route>
 
         </Routes>
         <Cart />
