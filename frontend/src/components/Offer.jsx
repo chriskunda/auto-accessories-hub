@@ -33,7 +33,7 @@ const Offer = ({ serviceRef, cantactRef }) => {
                         <div className='card-description'>
                             <h1>Used tyres</h1>
                             <p>Inspected used tyres for safe driving</p>
-                            <a className='btn' href="#call" onClick={}>Contact us for further help</a>
+                            <a className='btn' href="#call" onClick={(e) => scrollTo(contactRef, e)}>Contact us for further help</a>
                         </div>
 
                     </div>
