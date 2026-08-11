@@ -1,7 +1,7 @@
 
 import './Mainheader.css'
 
-const Mainnav = ({ serviceRef }) => {
+const Mainnav = ({ serviceRef, contactRef }) => {
 
     const scrollTo = (ref, e) => {
         if (!ref?.current) return;
@@ -18,8 +18,8 @@ const Mainnav = ({ serviceRef }) => {
                 <div className='links-main'>
                     <a href="/">Home</a>
                     <a href="">About</a>
-                    <a href="" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
-                    <a href="" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
+                    <a href="#services" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
+                    <a href="#call" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
                 </div>
 
             </div>

@@ -1,8 +1,8 @@
 import './Contact.css'
 
-const Contact = () => {
+const Contact = ({contactRef}) => {
     return(
-        <div className="parent-contact" id='call'>
+        <div className="parent-contact" id='call' ref={contactRef}>
 
             <h1>You've seen Enough. Now let's get to work.</h1>
             <p className='p2'>Get in touch with us by clicking on the WhatsApp button or the Phone number below.<br />
