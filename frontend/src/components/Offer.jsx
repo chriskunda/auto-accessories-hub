@@ -6,9 +6,8 @@ import Oil from '../assets/oilchange.jpg'
 import Rims from '../assets/newrims.webp'
 import Accessories from '../assets/accessories.jpg'
 import { useNavigate } from 'react-router-dom'
-import Contact from './Contact'
 
-const Offer = ({ serviceRef, cantactRef }) => {
+const Offer = ({ serviceRef, contactRef }) => {
 
     const navigate = useNavigate();
 
@@ -37,7 +36,9 @@ const Offer = ({ serviceRef, cantactRef }) => {
                         <div className='card-description'>
                             <h1>Used tyres</h1>
                             <p>Inspected used tyres for safe driving</p>
-                            <a className='btn' href="" onClick={(e) => scrollTo(contactRef, e)}>Contact us for further help</a>
+                            <button className='btn' type='button' onClick={(e) => scrollTo(contactRef, e)}>
+                                Contact us for further help
+                            </button>
                         </div>
 
                     </div>

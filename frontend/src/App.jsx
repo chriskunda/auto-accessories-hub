@@ -40,7 +40,7 @@ function App() {
               <div className='parent-container'>
                 <Mainnav serviceRef={serviceRef} contactRef={contactRef}/>
                 <Products/>
-                <Offer serviceRef={serviceRef} />
+                <Offer serviceRef={serviceRef} contactRef={contactRef} />
                 <Feature/>
                 <Faq/>
                 <Contact contactRef={contactRef}/>
