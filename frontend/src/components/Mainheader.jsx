@@ -1,4 +1,6 @@
 import './Mainheader.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Mainnav = ({ serviceRef, contactRef }) => {
 
