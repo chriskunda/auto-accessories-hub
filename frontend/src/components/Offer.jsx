@@ -113,7 +113,6 @@ const Offer = ({ serviceRef, contactRef }) => {
 
             </div>
         </div>
-
     )
 }
 
