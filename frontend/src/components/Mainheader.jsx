@@ -7,7 +7,7 @@ import './Mainheader.css'
 const Mainnav = () => {
 
     const homeRef = useRef(null);
-    const aboutRef = useRef(null);
+    const serviceRef = useRef(null);
     const contactRef = useRef(null);
 
     const scrollTo = (ref) => {
