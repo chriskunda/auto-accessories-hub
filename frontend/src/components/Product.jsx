@@ -3,7 +3,7 @@ import scrollDownAnimation from "../assets/scrolldown.json";
 import "./Product.css"
 import Tyre from "../assets/tyre.png"
 
-
+//ref={serviceRef}
 
 const Products = () => {
     return(

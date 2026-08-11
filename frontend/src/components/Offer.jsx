@@ -7,9 +7,9 @@ import Pencage from '../assets/pencage.jpg'
 import Oil from '../assets/oilchange.jpg'
 import Rims from '../assets/newrims.webp'
 import Accessories from '../assets/accessories.jpg'
-
 import { useNavigate } from 'react-router-dom'
 import Contact from './Contact'
+import {serviceRef} from "./Mainheader"
 
 const Offer = () => {
 
@@ -20,7 +20,7 @@ const Offer = () => {
 
     return(
 
-        <div className="parent-offer" id='services'>
+        <div className="parent-offer" id='services' >
             <div className="offer-words">
                 <p>OUR SERVICES</p>
                 <h1 className='offer-words-h1'>What we Offer</h1>
