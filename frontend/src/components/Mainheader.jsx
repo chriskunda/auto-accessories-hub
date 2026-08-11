@@ -19,7 +19,7 @@ const Mainnav = ({ serviceRef }) => {
                     <a href="/">Home</a>
                     <a href="">About</a>
                     <a href="" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
-                    <a href="#call">Contact</a>
+                    <a href="" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
                 </div>
 
             </div>
