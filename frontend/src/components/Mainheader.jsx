@@ -21,7 +21,7 @@ const Mainnav = () => {
                     <i className="fa-solid fa-bars burger-icon"></i>
                 </div>
                 <div className='links-main'>
-                    <a href="/">Home</a>
+                    <a href="/" onClick={() => useRef(homeRef)}>Home</a>
                     <a href="">About</a>
                     <a href="#services">Services</a>
                     <a href="#call">Contact</a>
