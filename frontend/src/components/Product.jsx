@@ -18,23 +18,8 @@ const Products = () => {
                     </div>
                     <div className="buy-button-container">
                         <a className="buy-button" href="#services">Shop now</a>
-
-                        {/* <Lottie className="scroll"
-                            animationData= {scrollDownAnimation}
-                            loop={true}
-                            style={{ width: 60, height: 60 }}
-
-                        /> */}
-
-                        
-
                     </div>
                 </div>
-
-                {/* <div className="tyre-image">
-                    <img src={Tyre} alt="" />
-                </div> */}
-
         </div>
     )
 }
