@@ -6,6 +6,14 @@ import './Mainheader.css'
 
 const Mainnav = () => {
 
+    const homeRef = useRef(null);
+    const aboutRef = useRef(null);
+    const contactRef = useRef(null);
+
+    const scrollTo = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return(
         <nav>
             <div className='nav-bar-main'>
