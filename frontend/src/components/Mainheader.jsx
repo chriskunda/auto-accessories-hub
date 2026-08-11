@@ -17,8 +17,8 @@ const Mainnav = ({ serviceRef, contactRef }) => {
                 <div className='links-main'>
                     <a href="/">Home</a>
                     <a href="">About</a>
-                    <a href="#services" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
-                    <a href="#call" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
+                    <a href="" onClick={(e) => scrollTo(serviceRef, e)}>Services</a>
+                    <a href="" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
                 </div>
 
             </div>
