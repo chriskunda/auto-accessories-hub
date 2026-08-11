@@ -28,7 +28,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const serviceRef = useRef(null);
-  
+  const contactRef = useRef(null);
 
   return (
     <CartProvider>
