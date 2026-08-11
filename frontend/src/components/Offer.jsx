@@ -8,7 +8,7 @@ import Accessories from '../assets/accessories.jpg'
 import { useNavigate } from 'react-router-dom'
 import Contact from './Contact'
 
-const Offer = ({ serviceRef }) => {
+const Offer = ({ serviceRef, cantactRef }) => {
 
     const navigate = useNavigate();
 
@@ -33,7 +33,7 @@ const Offer = ({ serviceRef }) => {
                         <div className='card-description'>
                             <h1>Used tyres</h1>
                             <p>Inspected used tyres for safe driving</p>
-                            <a className='btn' href="#call">Contact us for further help</a>
+                            <a className='btn' href="#call" onClick={}>Contact us for further help</a>
                         </div>
 
                     </div>
