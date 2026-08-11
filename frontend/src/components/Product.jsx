@@ -1,4 +1,3 @@
-import Lottie from "lottie-react";
 import scrollDownAnimation from "../assets/scrolldown.json";
 import "./Product.css"
 import Tyre from "../assets/tyre.png"
