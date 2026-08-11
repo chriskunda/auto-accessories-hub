@@ -59,3 +59,8 @@
     transform-origin: bottom left; /* Makes the line grow from left to right */
 }
 
+.icon{
+    font-size: 30px;
+    
+}
+
