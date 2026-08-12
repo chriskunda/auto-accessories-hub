@@ -24,7 +24,7 @@ const Mainnav = ({ serviceRef, contactRef }) => {
                     <a href="" onClick={(e) => scrollTo(contactRef, e)}>Contact</a>
                 </div>
                 <div className='icon'>
-                    <FontAwesomeIcon icon={faUser} />
+                    <FontAwesomeIcon icon={faUser} onClick={() => navigate('Login')}/>
                 </div>
 
             </div>
