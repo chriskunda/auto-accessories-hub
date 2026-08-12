@@ -63,7 +63,7 @@ const LoginForm = ({ activeView }) => {
   );
 };
 
-const Login4 = () => {
+const Login = () => {
   const [activeView, setActiveView] = useState("login");
 
   const toggleView = () => {
@@ -97,4 +97,4 @@ const Login4 = () => {
   );
 };
 
-export default Login4;
+export default Login;
