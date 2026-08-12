@@ -1,6 +1,6 @@
 
 
-function Createacc(){
+function Createaccount(){
     return(
         <div>
             <label htmlFor="">Full Name</label>
@@ -21,4 +21,4 @@ function Createacc(){
     )
 }
 
-export default Createacc;
+export default Createaccount;
