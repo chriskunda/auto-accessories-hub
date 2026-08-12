@@ -19,7 +19,8 @@ import Cart from './pages/Cart'
 import Toast from './components/Toast'
 
 //Signing in
-import Createaccount from '.'
+import Createaccount from '../sign/signup'
+import Login from '../sign/login'
 
 // Context
 import { CartProvider } from './context/CartContext'
