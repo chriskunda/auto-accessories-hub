@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom'
 
 const Mainnav = ({ serviceRef, contactRef }) => {
 
+    const navigate = useNavigate();
+
     const scrollTo = (ref, e) => {
         if (!ref?.current) return;
         e.preventDefault();
