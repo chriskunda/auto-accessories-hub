@@ -49,7 +49,6 @@ const LoginForm = ({ activeView }) => {
   return (
     <div className={`form login ${activeView === "login" ? "active" : ""}`}>
       <h2>Login</h2>
-      {/* <SocialButtons /> */}
       <p>Or use your email address</p>
 
       <form>
