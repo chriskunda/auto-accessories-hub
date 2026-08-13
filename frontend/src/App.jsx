@@ -18,7 +18,7 @@ import Oil from './pages/Oil'
 import Cart from './pages/Cart'
 import Toast from './components/Toast'
 
-//Signing in
+// Signing in
 import Login from '../sign/Registerlogin'
 
 // Context
