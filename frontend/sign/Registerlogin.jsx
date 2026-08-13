@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./login.css";
+import "./Registerlogin.css";
 
 const CardBackground = ({ activeView }) => {
   return <div className={`card-bg ${activeView === "login" ? "login" : ""}`} />;
