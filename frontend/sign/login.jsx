@@ -33,7 +33,6 @@ const RegisterForm = ({ activeView }) => {
       className={`form register ${activeView === "register" ? "active" : ""}`}
     >
       <h2>Sign Up</h2>
-      <SocialButtons />
       <p>Or use your email address</p>
 
       <form>
@@ -50,7 +49,7 @@ const LoginForm = ({ activeView }) => {
   return (
     <div className={`form login ${activeView === "login" ? "active" : ""}`}>
       <h2>Login</h2>
-      <SocialButtons />
+      {/* <SocialButtons /> */}
       <p>Or use your email address</p>
 
       <form>
